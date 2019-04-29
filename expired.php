@@ -74,77 +74,57 @@ var x = setInterval(function() {
 <center>
   <select name = "seniorname">
   <option value ="null">Click here to see all the secret names</option>
-  <!–– Add more or remove students here ––>
 
-  <option value="0f">0f: NameOfStudent (Female)</option>
-  <option value="1f">1f: NameOfStudent (Female)</option>
-  <option value="2f">2f: NameOfStudent (Female)</option>
-  <option value="3f">3f: NameOfStudent (Female)</option>
-  <option value="4f"> 4f: NameOfStudent (Female)</option>
-  <option value="5f">5f: NameOfStudent (Female)</option>
-  <option value="6f">6f: NameOfStudent (Female)</option>
-  
-    <option value="7f">7f: NameOfStudent (Female)</option>
-  <option value="8f">8f: NameOfStudent (Female)</option>
-  <option value="9f">9f: NameOfStudent (Female)</option>
-  <option value="10f">10f: NameOfStudent (Female)</option>
-  <option value="11f">11f: NameOfStudent (Female)</option>
-  
-    <option value="12f">12f: NameOfStudent (Female)</option>
-  <option value="13f">13f: NameOfStudent (Female)</option>
-  <option value="14f">14f: NameOfStudent (Female)</option>
-  <option value="15f">15f: NameOfStudent (Female)</option>
-  <option value="16f">16f: NameOfStudent (Female)</option>
-  
-    <option value="17f">17f: NameOfStudent (Female)</option>
-  <option value="18f">18f: NameOfStudent (Female)</option>
-  <option value="19f">19f: NameOfStudent (Female)</option>
-  <option value="20f">20f: NameOfStudent (Female)</option>
-  <option value="21f">21f NameOfStudent (Female)</option>
-  
-    <option value="22f">22f: NameOfStudent  (Female)</option>
-  <option value="23f">23f: NameOfStudent (Female)</option>
-  <option value="24f">24f: NameOfStudent (Female)</option>
-  <option value="25f">25f: NameOfStudent (Female)</option>
-  <option value="26f">26f: NameOfStudent (Female)</option>
-    <option value="27f">27f: NameOfStudent (Female)</option>
 
-    <option value="0m">0m: NameOfStudent (male)</option>
-  <option value="1m">1m: NameOfStudent (male)</option>
-  <option value="2m">2m: NameOfStudent (male)</option>
-  <option value="3m">3m: NameOfStudent (male)</option>
-  <option value="4m">4m: NameOfStudent (male)</option>
-<option value="5m">5m: NameOfStudent (male)</option>
-  <option value="6m">6m: NameOfStudent (male)</option>
-  <option value="7m">7m: NameOfStudent (male)</option>
-  <option value="8m">8m: NameOfStudent (male)</option>
-<option value="9m">9m: NameOfStudent (male)</option>
-  <option value="10m">10m: NameOfStudent (male)</option>
-  <option value="11m">11m: NameOfStudent (male)</option>
-  <option value="12m">12m: NameOfStudent (male)</option>
-<option value="13m">13m: NameOfStudent (male)</option>
-  <option value="14m">14m: NameOfStudent (male)</option>
-  <option value="15m">15m: NameOfStudent (male)</option>
-  <option value="16m">16m: NameOfStudent (male)</option>
+  <?php
+  $countf = 0;
+$fileread = fopen("allstug.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $countf ++;
+}
 
-<option value="17m">17m: NameOfStudent (male)</option>
-  <option value="18m">18m: NameOfStudent (male)</option>
-  <option value="19m">19m: NameOfStudent (male)</option>
-  <option value="20m">20m: NameOfStudent (male)</option>
-<option value="21m">21m: NameOfStudent (male)</option>
-  <option value="22m">22m: NameOfStudent (male)</option>
-  <option value="23m">23m: NameOfStudent (male)</option>
-  <option value="24m">24m: NameOfStudent (male)</option>
-<option value="25m">25m: NameOfStudent (male)</option>
-  <option value="26m">26m: NameOfStudent (male)</option>
-  <option value="27m">27m: NameOfStudent (male)</option>
-  <option value="28m">28m: NameOfStudent (male)</option>
-<option value="29m">29m: NameOfStudent (male)</option>
-  <option value="30m">30m: NameOfStudent (male)</option>
-  <option value="31m">31m: NameOfStudent (male)</option>
-  <option value="32m">32m: NameOfStudent (male)</option>
 
-<option value="33m">33m: NameOfStudent (male)</option>
+          $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
+$i =0;
+while(! feof($filefdata))
+  {
+   
+      ?>
+            <option value="<?php echo $i."f";?>"><?php echo $i."f: ".fgets($filefdata)." (female)";?></option>
+        <?php
+     $i++;
+  }
+
+fclose($filefdata);
+
+?>
+
+    <?php
+  $count = 0;
+$fileread = fopen("allstub.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $count ++;
+}
+
+          $filefdata = fopen("allstub.txt", "r") or die("Unable to open file!");
+$i =0;
+while(! feof($filefdata))
+  {
+
+      ?>
+            <option value="<?php echo $i."m";?>"><?php echo $i."m: ".fgets($filefdata)." (male)";?></option>
+        <?php
+        $i++;
+  }
+
+fclose($filefdata);
+    
+?>
+
+
+
   
   </select>
 </center>

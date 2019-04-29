@@ -298,79 +298,56 @@ function test_input($data) {
   Your senior's name:<br>
   <select name = "seniorname">
   <option value ="null">Nobody</option>
-  <!–– Add more or remove students here ––>
+    
 
-  <option value="0f">NameOfStudent (Female)</option>
-  <option value="1f">NameOfStudent (Female)</option>
-  <option value="2f">NameOfStudent (Female)</option>
-  <option value="3f">NameOfStudent (Female)</option>
-  <option value="4f"> NameOfStudent (Female)</option>
-  <option value="5f">NameOfStudent (Female)</option>
-  <option value="6f">NameOfStudent (Female)</option>
-  
-    <option value="7f">NameOfStudent (Female)</option>
-  <option value="8f">NameOfStudent (Female)</option>
-  <option value="9f"> NameOfStudent (Female)</option>
-  <option value="10f">NameOfStudent (Female)</option>
-  <option value="11f">NameOfStudent (Female)</option>
-  
-    <option value="12f">NameOfStudent (Female)</option>
-  <option value="13f">NameOfStudent (Female)</option>
-  <option value="14f">NameOfStudent (Female)</option>
-  <option value="15f">NameOfStudent (Female)</option>
-  <option value="16f">NameOfStudent (Female)</option>
-  
-    <option value="17f">NameOfStudent (Female)</option>
-  <option value="18f">NameOfStudent (Female)</option>
-  <option value="19f"> NameOfStudent (Female)</option>
-  <option value="20f">NameOfStudent (Female)</option>
-  <option value="21f">NameOfStudent (Female)</option>
-  
-    <option value="22f">NameOfStudent  (Female)</option>
-  <option value="23f">NameOfStudent (Female)</option>
-  <option value="24f">NameOfStudent (Female)</option>
-  <option value="25f">NameOfStudent (Female)</option>
-  <option value="26f">NameOfStudent (Female)</option>
-    <option value="27f">NameOfStudent (Female)</option>
+  <?php
+  $countf = 0;
+$fileread = fopen("allstug.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $countf ++;
+}
 
-  
-  <option value="0m">NameOfStudent (male)</option>
-  <option value="1m">NameOfStudent (male)</option>
-  <option value="2m">NameOfStudent (male)</option>
-  <option value="3m">NameOfStudent (male)</option>
-<option value="4m">NameOfStudent (male)</option>
-  <option value="5m">NameOfStudent (male)</option>
-  <option value="6m">NameOfStudent (male)</option>
-  <option value="7m">NameOfStudent (male)</option>
-<option value="8m">NameOfStudent (male)</option>
-  <option value="9m">NameOfStudent (male)</option>
-  <option value="10m">NameOfStudent (male)</option>
-  <option value="11m">NameOfStudent (male)</option>
-<option value="12m">NameOfStudent (male)</option>
-  <option value="13m">NameOfStudent (male)</option>
-  <option value="14m">NameOfStudent (male)</option>
-  <option value="15m">NameOfStudent (male)</option>
 
-<option value="16m">NameOfStudent (male)</option>
-  <option value="17m">NameOfStudent (male)</option>
-  <option value="18m">NameOfStudent (male)</option>
-  <option value="19m">NameOfStudent (male)</option>
-<option value="20m">NameOfStudent (male)</option>
-  <option value="21m">NameOfStudent (male)</option>
-  <option value="22m">NameOfStudent (male)</option>
-  <option value="23m">NameOfStudent (male)</option>
-<option value="24m">NameOfStudent (male)</option>
-  <option value="25m">NameOfStudent (male)</option>
-  <option value="26m">NameOfStudent (male)</option>
-  <option value="27m">NameOfStudent (male)</option>
-<option value="28m">NameOfStudent (male)</option>
-  <option value="29m">NameOfStudent (male)</option>
-  <option value="30m">NameOfStudent (male)</option>
-  <option value="31m">NameOfStudent (male)</option>
+          $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
+$i =0;
+while(! feof($filefdata))
+  {
+   
+      ?>
+            <option value="<?php echo $i."f";?>"><?php echo fgets($filefdata)." (female)";?></option>
+        <?php
+     $i++;
+  }
 
-<option value="32m">NameOfStudent (male)</option>
-  <option value="33m">NameOfStudent (male)</option>
-  
+fclose($filefdata);
+
+?>
+
+    <?php
+  $count = 0;
+$fileread = fopen("allstub.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $count ++;
+}
+
+          $filefdata = fopen("allstub.txt", "r") or die("Unable to open file!");
+$i =0;
+while(! feof($filefdata))
+  {
+
+      ?>
+            <option value="<?php echo $i."m";?>"><?php echo fgets($filefdata)." (male)";?></option>
+        <?php
+        $i++;
+  }
+
+fclose($filefdata);
+    
+?>
+
+
   </select>
   <input type="text" name="email" placeholder="Your email" value="<?php echo $name;?>">
   <span class="error"> <?php echo $emailErr;?></span> </input>

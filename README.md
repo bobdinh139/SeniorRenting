@@ -3,13 +3,11 @@
 
 SET-UP
 
-1. Add students to the list (@<option> in _index.php_ , _allstub.txt_ and _allstug.txt_).
+1. **Remember** to create and add students to _allstub.txt_ (for males) and _allstug.txt_ (for females) file at root.
 
 2. Add bad words to the list (prevent user from entering bad words). 
 
-3. **Remember** to create and add students to _allstub.txt_ (for males) and _allstug.txt_ (for females) file at root.
-
-4. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
+3. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 
 ## Benefits?
 
