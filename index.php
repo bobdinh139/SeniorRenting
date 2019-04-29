@@ -448,6 +448,8 @@ fclose($filemdata);
 <center><refer><p> Designing/developing <a href="https://iwillpllugmyself/nullflows"> @nullflows</a></p>
 <p>plugin: AOS</p>
 <p>Mailing: PHPMailer</p>
+<p>Timer support for Safari: momentjs</p>
+
 <p>UIGradient</p>
 <p>W3Schools</p>
 </refer></center>
