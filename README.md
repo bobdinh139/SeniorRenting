@@ -9,15 +9,17 @@ SET-UP
 
 3. Add bad words to the list. 
 
-4. Add students to the list (both _index.php_ and _test.php_).
+4. Add students to the list (@<option> _index.php_ , _allstub.txt_ and _allstug.txt_).
 
 5. Add Credits (if needed).
 
-6. **Remember** to create _amount.txt_ file at /information/.
+6. **Remember** to create _amount.txt_ _allstub.txt_ and _allstug.txt_ file at /information/.
 
 7. **Remember** to place _/mail/_ at root
 
-8. **Remember** to place _allstub.txt_ (all male students) and _allstubg.txt_ (all female students) at root
+8. **Remember** to place _allstub.txt_ (all male students) and _allstug.txt_ (all female students) at root
+
+9. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 
 ## Benefits?
 
@@ -46,7 +48,7 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 + ~~Change secret names to actual name when sending an email~~
 
-+ Use file to list all names
++ ~~Use file to list all names~~
 
 + ~~fix~~ improve drawback(s)
 
