@@ -1,9 +1,7 @@
 <html lang="en" >
 <head>
 
-<!–– add SetUpStudents.php right here (execute 1 time, then delete it) ––>
-
-
+<?php include 'SetUpStudents.php';?>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rent a senior</title>
@@ -76,12 +74,23 @@ $secondNumber = $_POST["secondNumber"];
 $checkTotal = $firstNumber + $secondNumber;
 
 function findSenior($str2){
+    $str22 = substr($str2, -1,1);
+    $str33 = substr($str2, 0,1);
+    $txt ="";
+    if ($str22 == "m"){
+         $str3="allstub.txt";
+        $lines = file($str3, FILE_IGNORE_NEW_LINES);
+        $txt= $lines[$str33]; 
 
-$txt = "";
+    }
+    elseif ($str22 == "f"){
+         $str3="allstug.txt";
+        $lines = file($str3, FILE_IGNORE_NEW_LINES);
+        $txt= $lines[$str33]; 
 
-$filemdata1 = fopen("information/".$str2.".txt", "r") or die("Unable to open file!");
+    }
+    
 
-$txt= fgets($filemdata1);
 
  return $txt;
     
@@ -157,15 +166,20 @@ echo "<script type='text/javascript'>alert('$amountErr');</script>";
 $txt ="";
 $str2 = $_POST["seniorname"];
 
-$txt = findSenoir($str2);
-$txt = $txt.": "."$".$str4;
+$txt1 = findSenior($str2);
+$txt = $txt1.": "."$".$str4;
 
 
 fwrite($filename, $txt);
 fclose($filename);
             
             
-  } 
+  }
+         else {
+             $AErr = "Your bid is lower than the lastest bid";
+             echo "<script type='text/javascript'>alert('$AErr');</script>";
+        
+         }
 }
 
         
@@ -228,7 +242,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/mail/SMTP.php';
 $str2=$_POST["seniorname"];
 $txt ="";
 
-$txt = findSenoir($str2);
+$txt = findSenior($str2);
 
 $mail = new PHPMailer;
 $mail->isSMTP(); 
@@ -237,9 +251,9 @@ $mail->Host = "smtp.gmail.com"; // use $mail->Host = gethostbyname('smtp.gmail.c
 $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is deprecated
 $mail->SMTPAuth = true;
-$mail->Username = 'youremail'; // email
-$mail->Password = 'yourpassw'; // password
-$mail->setFrom('sendfromemail', 'nullflows smart fridge'); // From email and name
+$mail->Username = 'Youremail'; // email
+$mail->Password = 'yourpasswd'; // password
+$mail->setFrom('your email', 'nullflows smart fridge'); // From email and name
 $mail->addAddress($_POST["email"], 'User'); // to email and name
 $mail->Subject = 'Verify bidding';
 $mail->msgHTML("Did you bid on ".$txt." for $".$amount."?"." Email me if you did/didn't"); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
@@ -287,7 +301,6 @@ function test_input($data) {
   <!–– Add more or remove students here ––>
 
   <option value="0f">NameOfStudent (Female)</option>
-  <option value="27f">NameOfStudent (Female)</option>
   <option value="1f">NameOfStudent (Female)</option>
   <option value="2f">NameOfStudent (Female)</option>
   <option value="3f">NameOfStudent (Female)</option>
@@ -318,44 +331,45 @@ function test_input($data) {
   <option value="24f">NameOfStudent (Female)</option>
   <option value="25f">NameOfStudent (Female)</option>
   <option value="26f">NameOfStudent (Female)</option>
+    <option value="27f">NameOfStudent (Female)</option>
+
   
-  
+  <option value="0m">NameOfStudent (male)</option>
   <option value="1m">NameOfStudent (male)</option>
   <option value="2m">NameOfStudent (male)</option>
   <option value="3m">NameOfStudent (male)</option>
-  <option value="4m">NameOfStudent (male)</option>
-<option value="5m">NameOfStudent (male)</option>
+<option value="4m">NameOfStudent (male)</option>
+  <option value="5m">NameOfStudent (male)</option>
   <option value="6m">NameOfStudent (male)</option>
   <option value="7m">NameOfStudent (male)</option>
-  <option value="8m">NameOfStudent (male)</option>
-<option value="9m">NameOfStudent (male)</option>
+<option value="8m">NameOfStudent (male)</option>
+  <option value="9m">NameOfStudent (male)</option>
   <option value="10m">NameOfStudent (male)</option>
   <option value="11m">NameOfStudent (male)</option>
-  <option value="12m">NameOfStudent (male)</option>
-<option value="13m">NameOfStudent (male)</option>
+<option value="12m">NameOfStudent (male)</option>
+  <option value="13m">NameOfStudent (male)</option>
   <option value="14m">NameOfStudent (male)</option>
   <option value="15m">NameOfStudent (male)</option>
-  <option value="16m">NameOfStudent (male)</option>
 
-<option value="17m">NameOfStudent (male)</option>
+<option value="16m">NameOfStudent (male)</option>
+  <option value="17m">NameOfStudent (male)</option>
   <option value="18m">NameOfStudent (male)</option>
   <option value="19m">NameOfStudent (male)</option>
-  <option value="20m">NameOfStudent (male)</option>
-<option value="21m">NameOfStudent (male)</option>
+<option value="20m">NameOfStudent (male)</option>
+  <option value="21m">NameOfStudent (male)</option>
   <option value="22m">NameOfStudent (male)</option>
   <option value="23m">NameOfStudent (male)</option>
-  <option value="24m">NameOfStudent (male)</option>
-<option value="25m">NameOfStudent (male)</option>
+<option value="24m">NameOfStudent (male)</option>
+  <option value="25m">NameOfStudent (male)</option>
   <option value="26m">NameOfStudent (male)</option>
   <option value="27m">NameOfStudent (male)</option>
-  <option value="28m">NameOfStudent (male)</option>
-<option value="29m">NameOfStudent (male)</option>
+<option value="28m">NameOfStudent (male)</option>
+  <option value="29m">NameOfStudent (male)</option>
   <option value="30m">NameOfStudent (male)</option>
   <option value="31m">NameOfStudent (male)</option>
-  <option value="32m">NameOfStudent (male)</option>
 
-<option value="33m">NameOfStudent (male)</option>
-  <option value="34m">NameOfStudent (male)</option>
+<option value="32m">NameOfStudent (male)</option>
+  <option value="33m">NameOfStudent (male)</option>
   
   </select>
   <input type="text" name="email" placeholder="Your email" value="<?php echo $name;?>">
@@ -404,8 +418,13 @@ fclose($filewbid);
 
 <?php
 ini_set( "display_errors", 0); 
-
-for ($x = 0; $x <= 27; $x++) {
+$countf = 0;
+$fileread = fopen("allstug.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $countf ++;
+}
+for ($x = 0; $x <= $countf; $x++) {
     $filefdata = fopen("information/".$x."f".".txt", "r") or die("Unable to open file!");
 while(! feof($filefdata))
   {
@@ -415,7 +434,14 @@ while(! feof($filefdata))
 fclose($filefdata);
 }
 
-for ($x = 1; $x <= 34; $x++) {
+$count = 0;
+$fileread = fopen("allstub.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $count ++;
+}
+
+for ($x = 0; $x <= $count; $x++) {
 $filemdata = fopen("information/".$x."m".".txt", "r") or die("Unable to open file!");
 while(! feof($filemdata))
   {
@@ -442,7 +468,7 @@ fclose($filemdata);
 <hr>
 
 <center><refer><h2>This website is made possible by:</h2></refer></center>
-<center><refer><p> Designing/developing <a href="https://stlol.lol"> @nullflows</a></p>
+<center><refer><p> Designing/developing <a href="https://iwillpllugmyself/nullflows"> @nullflows</a></p>
 <p>plugin: AOS</p>
 <p>Mailing: PHPMailer</p>
 <p>UIGradient</p>

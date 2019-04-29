@@ -3,23 +3,15 @@
 
 SET-UP
 
-1. put ``` <?php include 'SetUpStudents.php';?> ``` at the top (**head**) of _index.php_ .
+1. Add students to the list (@<option> _index.php_ , _allstub.txt_ and _allstug.txt_).
 
-2. After executing the first time, remove ``` <?php include 'SetUpStudents.php';?> ``` from _index.php_ .
+2. Add bad words to the list. 
 
-3. Add bad words to the list. 
+3. **Remember** to create and add students to _allstub.txt_ (for males) and _allstug.txt_ (for females) file at root.
 
-4. Add students to the list (@<option> _index.php_ , _allstub.txt_ and _allstug.txt_).
+4. **Remember** to place _/mail/_ at root
 
-5. Add Credits (if needed).
-
-6. **Remember** to create _amount.txt_ _allstub.txt_ and _allstug.txt_ file at /information/.
-
-7. **Remember** to place _/mail/_ at root
-
-8. **Remember** to place _allstub.txt_ (all male students) and _allstug.txt_ (all female students) at root
-
-9. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
+5. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 
 ## Benefits?
 
@@ -30,6 +22,8 @@ SET-UP
 + User can see how many times they have left until senior bidding expired 
 
 + User can see who wins which senior
+
++ User will receive an email confirmation 
 
 ## Drawback(s)?
 

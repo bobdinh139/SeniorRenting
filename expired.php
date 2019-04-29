@@ -77,7 +77,6 @@ var x = setInterval(function() {
   <!–– Add more or remove students here ––>
 
   <option value="0f">0f: NameOfStudent (Female)</option>
-  <option value="27f">27f: NameOfStudent (Female)</option>
   <option value="1f">1f: NameOfStudent (Female)</option>
   <option value="2f">2f: NameOfStudent (Female)</option>
   <option value="3f">3f: NameOfStudent (Female)</option>
@@ -108,8 +107,9 @@ var x = setInterval(function() {
   <option value="24f">24f: NameOfStudent (Female)</option>
   <option value="25f">25f: NameOfStudent (Female)</option>
   <option value="26f">26f: NameOfStudent (Female)</option>
-  
-  
+    <option value="27f">27f: NameOfStudent (Female)</option>
+
+    <option value="0m">0m: NameOfStudent (male)</option>
   <option value="1m">1m: NameOfStudent (male)</option>
   <option value="2m">2m: NameOfStudent (male)</option>
   <option value="3m">3m: NameOfStudent (male)</option>
@@ -145,7 +145,6 @@ var x = setInterval(function() {
   <option value="32m">32m: NameOfStudent (male)</option>
 
 <option value="33m">33m: NameOfStudent (male)</option>
-  <option value="34m">34m: NameOfStudent (male)</option>
   
   </select>
 </center>
@@ -179,8 +178,13 @@ fclose($filewbid);
 
 <?php
 ini_set( "display_errors", 0); 
-
-for ($x = 0; $x <= 27; $x++) {
+$countf = 0;
+$fileread = fopen("allstug.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $countf ++;
+}
+for ($x = 0; $x <= $countf; $x++) {
     $filefdata = fopen("information/".$x."f".".txt", "r") or die("Unable to open file!");
 while(! feof($filefdata))
   {
@@ -190,7 +194,14 @@ while(! feof($filefdata))
 fclose($filefdata);
 }
 
-for ($x = 1; $x <= 34; $x++) {
+$count = 0;
+$fileread = fopen("allstub.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $count ++;
+}
+
+for ($x = 0; $x <= $count; $x++) {
 $filemdata = fopen("information/".$x."m".".txt", "r") or die("Unable to open file!");
 while(! feof($filemdata))
   {
