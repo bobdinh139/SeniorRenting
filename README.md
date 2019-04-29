@@ -3,15 +3,13 @@
 
 SET-UP
 
-1. Add students to the list (@<option> _index.php_ , _allstub.txt_ and _allstug.txt_).
+1. Add students to the list (@<option> in _index.php_ , _allstub.txt_ and _allstug.txt_).
 
-2. Add bad words to the list. 
+2. Add bad words to the list (prevent user from entering bad words). 
 
 3. **Remember** to create and add students to _allstub.txt_ (for males) and _allstug.txt_ (for females) file at root.
 
-4. **Remember** to place _/mail/_ at root
-
-5. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
+4. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 
 ## Benefits?
 
@@ -25,11 +23,13 @@ SET-UP
 
 + User will receive an email confirmation 
 
++ User can request features, create PR(s) and report issues here
+
 ## Drawback(s)?
 
 + ~~User can fake emails~~
 
-**Temporary fix:**
+**fix:**
 use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function to verify bidding process. 
 
 + Still needs a moderator
