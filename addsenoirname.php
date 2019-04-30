@@ -69,7 +69,7 @@ Password:<br> <input type="password" name="pass" placeholder="password" ><br>
 <?php
 
 
-$apass = "123456789";
+$apass = "1234567890";
 $pass = $_POST["pass"];
 $nameremove = $_POST["usernameremove"];
 

@@ -3,7 +3,7 @@
 
 SET-UP
 
-1. **Remember** to go to _/allsenoirname.php_ and add senior (default password is ```123456789```).
+1. **Remember** to go to _/allsenoirname.php_ and add senior (default password is ```123456789``` for adding senior and ```1234567890``` for deleting senior).
 
 2. Add bad words to the list (prevent user from entering bad words). 
 
@@ -49,9 +49,21 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 ## NOTES
 
-mail() branch (deprecated) uses mail() instead of PHPMailer. 
+Mail() branch (deprecated and deleted) uses mail() instead of PHPMailer. 
 
-mail() does not always work, but it is eaiser to setup.
+Password in _allsenoirname.php_ is not encrypted for the sake of simplicity.
 
-password in _allsenoirname.php_ is not encrypted for the sake of simplicity
+## Credits
+
+Plugin: [AOS](https://michalsnik.github.io/aos/) (Animation)
+
+Mailing: [PHPMailer](https://github.com/PHPMailer/PHPMailer) 
+
+Timer support for Safari: [momentjs](https://momentjs.com/)
+
+Background: [UIGradients](https://uigradients.com/#Terminal)
+
+Some functions: [W3schools](https://www.w3schools.com/)
+
+
 

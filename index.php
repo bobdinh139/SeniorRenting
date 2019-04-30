@@ -62,7 +62,7 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 $emailErr = $amountErr = $naErr = $mathErr="";
-$name = $amount = "";
+ $amount = "";
 
 error_reporting(0);
 error_reporting(E_ALL & ~E_NOTICE);
@@ -292,7 +292,7 @@ function test_input($data) {
 
 <form method='post' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
   Amount:<br>
-  <input type="text" name="amount" placeholder="Amount" value="<?php echo $amount;?>">
+  <input type="text" name="amount" placeholder="Amount" value="">
   <span class="error"> <?php echo $amountErr;?></span> 
   <br>
   Your senior's name:<br>
@@ -351,7 +351,7 @@ fclose($filefdata);
   </select>
   <br>
  Your email:<br>
-  <input type="text" name="email" placeholder="Your email" value="<?php echo $name;?>">
+  <input type="text" name="email" placeholder="Your email" value="<?php echo $tocheck;?>">
   <span class="error"> <?php echo $emailErr;?></span> </input>
   <br><?php echo $random_number1 . ' + ' . $random_number2 . ' = '."?"; ?><br>
   <input name="firstNumber" type="hidden" value="<?php echo $random_number1; ?>" />
