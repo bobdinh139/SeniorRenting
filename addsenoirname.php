@@ -27,34 +27,37 @@ $apass = "123456789";
 $pass = $_POST["pass"];
 $nameadd = $_POST["usernameadd"];
 
-
+if(!($_POST["gender"] == "null")){
+     if(!(empty($_POST["usernameadd"]))){
  if ( $pass==$apass ){
      
-    if(!($_POST["gender"] == "null")){
-    if(!(empty($_POST["usernameadd"]))){
+    
+   
     $filewbid = fopen($_POST("gender"), "a") or die("Unable to open file!");
     fwrite($filewbid, "\n".$nameadd);
      echo "added!";
 
     }
-    }
-    }
-else{
+        else{
 echo "wrong password";
 }
+    }
+
+    }
+
 ?>
 
 <info><h3>Add A Senior</h3></info>
 
 <form action="" method="post"><br>
-Name to add:<br> <input type="text" name="usernameadd"><br>
+Name to add:<br> <input type="text" name="usernameadd" placeholder="Name to add"><br>
 Male/Female:<br> <select name = "gender">
  <option value="null">Select Gender</option>
   <option value="allstug.txt">Female</option>
   <option value="allstub.txt">Male</option>
 </select>
 <br>
-Password:<br> <input type="password" name="pass"><br>
+Password:<br> <input type="password" name="pass" placeholder="password" ><br>
 
 <input type="submit" value="Add!">
 </form>
@@ -70,11 +73,12 @@ $apass = "123456789";
 $pass = $_POST["pass"];
 $nameremove = $_POST["usernameremove"];
 
-
+   if(!($_POST["gender"] == "null")){
+          if(!(empty($_POST["usernameremove"]))){
  if ( $pass==$apass ){
      
-    if(!($_POST["gender"] == "null")){
-    if(!(empty($_POST["usernameremove"]))){
+ 
+ 
 
 
  $lines = file($_POST["gender"]); 
@@ -85,25 +89,25 @@ $nameremove = $_POST["usernameremove"];
      echo "Removed!";
 
  
-    }
+    }else{
+echo "wrong password";
+}
 }
     }
-else{
-echo "wrong";
-}
+
 
 
 ?>
 <info><h3>Remove A Senior</h3></info>
 <form action="" method="post">
-Name to Remove:<br> <input type="text" name="usernameremove"><br>
+Name to Remove:<br> <input type="text" name="usernameremove"placeholder="Name to remove" ><br>
 Male/Female <br><select name = "gender">
  <option value="null">Select Gender</option>
   <option value="allstug.txt">Female</option>
   <option value="allstub.txt">Male</option>
 </select>
 <br>
-Password: <br><input type="password" name="pass"><br>
+Password: <br><input type="password" name="pass" placeholder="password"><br>
 <input type="submit" value="Remove!">
 
 </form>

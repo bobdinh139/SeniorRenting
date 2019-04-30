@@ -15,7 +15,7 @@ SET-UP
 
 + Update real-time
 
-+ Bidding history, but no seniors' names revealed (only a person who bids)
++ Bidding history, but no seniors' names revealed (only a person who bids and senior's secret name)
 
 + User can see how many times they have left until senior bidding expired 
 
@@ -23,12 +23,13 @@ SET-UP
 
 + User will receive an email confirmation 
 
-+ User can request features, create PR(s) and report issues here
++ User can request features, create PR(s) and report issues
+
++ Fully Open-source
 
 ## Drawback(s)?
 
 + ~~User can fake emails~~
-
 **fix:**
 use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function to verify bidding process. 
 
@@ -48,11 +49,9 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 ## NOTES
 
-the link provided above does not have mail() functioned (free hosting lol) and they block mail services.
-
-Therefore, use [this link](https://rentingseniorbynull.000webhostapp.com/) if you want to test out ~~mail()~~ PHPMailer
-
 mail() branch (deprecated) uses mail() instead of PHPMailer. 
 
 mail() does not always work, but it is eaiser to setup.
+
+password in _allsenoirname.php_ is not encrypted for the sake of simplicity
 

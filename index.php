@@ -349,6 +349,8 @@ fclose($filefdata);
 
 
   </select>
+  <br>
+ Your email:<br>
   <input type="text" name="email" placeholder="Your email" value="<?php echo $name;?>">
   <span class="error"> <?php echo $emailErr;?></span> </input>
   <br><?php echo $random_number1 . ' + ' . $random_number2 . ' = '."?"; ?><br>
@@ -436,10 +438,14 @@ fclose($filemdata);
 <center> 
 <hr>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<refer><h2>Read more</h2>
+<refer><h2>About/Benefits</h2>
 <p> Seniors’ secret names are used for anonymity purposes</p>
-<p> You can create PR(s)</p>
-<p> Source code will be opened partially for security/anonymity reasons</p></refer>
+<p>Update real-time</p>
+<p>Bidding history, but no seniors' names revealed (only a person who bids)</p>
+<p>User can see how many times they have left until senior bidding expired</p>
+<p>User can see who wins which senior</p>
+<p>User will receive an email confirmation</p>
+<p>User can request features, create PR(s) and report issues here</p>
 </center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>
