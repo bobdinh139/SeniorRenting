@@ -445,6 +445,7 @@ fclose($filemdata);
 <p>User can see how many times they have left until senior bidding expired</p>
 <p>User can see who wins which senior</p>
 <p>User will receive an email confirmation</p>
+<p>Fully Open-source</p>
 <p>User can request features, create PR(s) and report issues  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
 </center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
