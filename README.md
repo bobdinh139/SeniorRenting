@@ -11,7 +11,7 @@ SET-UP
 
 ## Benefits?
 
-+ Add seniors easily through website 
++ Add/Remove seniors easily through website 
 
 + Update real-time
 
