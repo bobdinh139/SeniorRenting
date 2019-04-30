@@ -57,6 +57,16 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+input[type=password], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ad125b;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
 input[type="submit"] {
 	
 	display: inline-block;
@@ -100,7 +110,6 @@ input[type="submit"]:hover {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 
 .collapsible {
     background-color: #adf;

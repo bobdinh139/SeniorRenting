@@ -6,6 +6,18 @@ $filemdata = fopen("information/amount.txt", "w") or die("Unable to open file!")
 
 }
 
+if(!file_exists("allstub.txt")){
+
+$filemdata = fopen("allstub.txt", "w") or die("Unable to open file!");
+
+}
+
+
+if(!file_exists("allstug.txt")){
+
+$filemdata = fopen("allstug.txt", "w") or die("Unable to open file!");
+
+}
 
 
 /*male */

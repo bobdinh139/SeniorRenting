@@ -3,13 +3,15 @@
 
 SET-UP
 
-1. **Remember** to create and add students to _allstub.txt_ (for males) and _allstug.txt_ (for females) file at root.
+1. **Remember** to go to _/allsenoirname.php_ and add senior (default password is ```123456789```).
 
 2. Add bad words to the list (prevent user from entering bad words). 
 
 3. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 
 ## Benefits?
+
++ Add seniors easily through website 
 
 + Update real-time
 
