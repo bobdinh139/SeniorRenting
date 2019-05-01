@@ -3,11 +3,13 @@
 
 SET-UP
 
-1. **Remember** to go to _/allsenoirname.php_ and add senior (default password is ```123456789``` for adding senior and ```1234567890``` for deleting senior).
+1. **Remember** to go to ```_/allsenoirname.php_``` and add senior (default password is ```123456789``` for adding senior(s) and ```1234567890``` for deleting senior(s)).
 
 2. Add bad words to the list (prevent user from entering bad words). 
 
 3. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
+
+4. Moderating, if the bid(s) is not legit, go to ``` _/RemoveABidd.php_ ``` to remove lastest bid (default password is ```01234567890``` for removing bid(s)) 
 
 ## Benefits?
 
@@ -22,6 +24,8 @@ SET-UP
 + User can see who wins which senior
 
 + User will receive an email confirmation 
+
++ Provided with admin tool to easily remove bid(s) if the bid(s) is/are not legit 
 
 + User can request features, create PR(s) and report issues
 
@@ -47,13 +51,13 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 + ~~fix~~ ~~improve drawback(s)~~
 
-+ Create Admin tools(?)
++ ~~Create Admin tools(?)~~
 
 + Add more images at the top of the website (w/ images of west students shuffle through)
 
 ## NOTES
 
-Password in _allsenoirname.php_ is not encrypted for the sake of simplicity.
+Passwords in ```_allsenoirname.php_ ``` and ``` _RemoveABidd.php_ ``` are not encrypted for the sake of simplicity.
 
 ## Credits
 

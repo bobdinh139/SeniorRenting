@@ -237,10 +237,23 @@ fwrite($filewbid, $txt);
 fwrite($filewbid, "\n");
 
             $str3="information/"."p".$_POST["seniorname"].".txt";
-        $str4 = (int)$_POST["amount"];
+        
+         $pre="information/"."pre".$_POST["seniorname"].".txt";
+        $listor="information/"."listor".$_POST["seniorname"].".txt";
+            $str4 = (int)$_POST["amount"];
+        
         $pricefile = fopen($str3, "r") or die("Unable to open file!");
-         
-         if ($str4 > (int)fgets($pricefile) ){
+        
+         $tocheckbd = (int)fgets($pricefile);
+         fclose($pricefile);
+
+         if ($str4 > $tocheckbd ){
+            $prefile=fopen($pre, "a") or die("Unable to open file!");
+            fwrite($prefile, $_POST["amount"]."\n");
+            fclose($prefile);
+             $listbfile=fopen($listor, "a") or die("Unable to open file!");
+            fwrite($listbfile, $_POST["email"]."\n");
+            fclose($listbfile);
 
          $pricefile=fopen($str3, "w") or die("Unable to open file!");
           fwrite($pricefile, $str4);
@@ -359,7 +372,7 @@ fclose($filefdata);
   </select>
   <br>
  Your email:<br>
-  <input type="text" name="email" placeholder="Your email" value="<?php echo $tocheck;?>">
+  <input type="text" name="email" placeholder="Your email" value="<?php echo  $_POST["email"];?>">
   <span class="error"> <?php echo $emailErr;?></span> </input>
   <br><?php echo $random_number1 . ' + ' . $random_number2 . ' = '."?"; ?><br>
   <input name="firstNumber" type="hidden" value="<?php echo $random_number1; ?>" />
