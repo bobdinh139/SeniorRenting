@@ -53,81 +53,59 @@ function rem($fileread){
 // thanks philipnorton42
 $filename = $fileread;
  
-// Open file
 $file_handle = fopen($filename, 'r');
  
-// Set up loop variables
 $linebreak  = false;
 $file_start = false;
  
-// Number of bytes to look at
+
 $bite = 50;
  
-// File size
 $filesize = filesize($filename);
  
-// Put pointer to the end of the file.
 fseek($file_handle, 0, SEEK_END);
  
 while ($linebreak === false && $file_start === false) {
-    // Get the current file position.
     $pos = ftell($file_handle);
  
     if ($pos < $bite) {
-	// If the position is less than a bite then go to the start of the file
         rewind($file_handle);
     } else { 
-        // Move back $bite characters into the file
         fseek($file_handle, -$bite, SEEK_CUR);
     }
  
-    // Read $bite characters of the file into a string.
     $string = fread($file_handle, $bite) or die ("Can't read from file " . $filename . ".");
  
-    /* If we happen to have read to the end of the file then we need to ignore 
-     * the last line as this will be a new line character.
-     */
     if ($pos + $bite >= $filesize) {
         $string = substr_replace($string, '', -1);
     }
  
-    // Since we fred() forward into the file we need to back up $bite characters. 
     if ($pos < $bite) {
-	// If the position is less than a bite then go to the start of the file
         rewind($file_handle);
     } else { 
-        // Move back $bite characters into the file
         fseek($file_handle, -$bite, SEEK_CUR);
     }
  
-    // Is there a line break in the string we read?
     if (is_integer($lb = strrpos($string, "\n"))) {
-        // Set $linebreak to true so that we break out of the loop
         $linebreak = true;
-        // The last line in the file is right after the linebreak
         $line_end = ftell($file_handle) + $lb + 1; 
     }
  
     if  (ftell($file_handle) == 0) {
-       // Break out of the loop if we are at the beginning of the file. 
        $file_start = true;
     }
 }
  
 if ($linebreak === true) {
-    // If we have found a line break then read the file into a string to writing without the last line.
     rewind($file_handle);
     $file_minus_lastline = fread($file_handle, $line_end);
  
-    // Close the file
     fclose($file_handle);
  
-    // Open the file in write mode and truncate it.
     $file_handle = fopen($filename, 'w+');
     fputs($file_handle, $file_minus_lastline);
     fclose($file_handle);
 } else {
-    // Close the file, nothing else to do.
     fclose($file_handle);
 }
 
