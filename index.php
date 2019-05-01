@@ -152,42 +152,13 @@ echo "<script type='text/javascript'>alert('$amountErr');</script>";
       $chekk = -1;
     }
     elseif ($chekk==0)  {
-        $str3="information/"."p".$_POST["seniorname"].".txt";
-        $str4 = (int)$_POST["amount"];
-        $pricefile = fopen($str3, "r") or die("Unable to open file!");
-         
-         if ($str4 > (int)fgets($pricefile) ){
+    $amount = test_input($_POST["amount"]);
 
-         $pricefile=fopen($str3, "w") or die("Unable to open file!");
-          fwrite($pricefile, $str4);
-            fclose($pricefile);
-            $str = "information/".$_POST["seniorname"].".txt";
-            $filename = fopen($str, "w") or die("Unable to open file!");
-$txt ="";
-$str2 = $_POST["seniorname"];
-
-$txt1 = findSenior($str2);
-$txt = $txt1.": "."$".$str4;
-
-
-fwrite($filename, $txt);
-fclose($filename);
-            
-            
-  }
-         else {
-             $AErr = "Your bid is lower than the lastest bid";
-             echo "<script type='text/javascript'>alert('$AErr');</script>";
-        
-         }
-}
+   }
 
         
     }
 
-    if ($chekk == 0){
-    $amount = test_input($_POST["amount"]);
-   }
   }
 }
 
@@ -197,7 +168,6 @@ if ($amount != ""){
 
 $txt = $amount;
 $toapp = "by";
-$filewbid = fopen("information/amount.txt", "a") or die("Unable to open file!");
 
 if (empty($_POST["seniorname"])) {
     $emailErr = "empty name";
@@ -220,11 +190,7 @@ $checc = -1;
 $checc =-1;
  
 }
-    if ($checc ==0){
-$txt = "Amount: $".$amount." for ".$_POST["seniorname"]." ".$toapp." ".$_POST["email"]." ". "at ". date("m/d/Y");
-fwrite($filewbid, $txt);
-fwrite($filewbid, "\n");
-}
+
 }
 
 
@@ -261,15 +227,57 @@ $mail->AltBody = 'HTML messaging not supported'; // If html emails is not suppor
 // $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
 $mess = "";
 if(!$mail->send()){
-    $mess = "Mailer Error: " . $mail->ErrorInfo;
+    $mess = "Failed! your email is incorrect? Mailer Error: " . $mail->ErrorInfo;
+    $message = $mess;
+    echo "<script type='text/javascript'>alert('$message');</script>";
 }else{
-    $mess =  "Message sent!";
+    $filewbid = fopen("information/amount.txt", "a") or die("Unable to open file!");
+$txt = "Amount: $".$amount." for ".$_POST["seniorname"]." ".$toapp." ".$_POST["email"]." ". "at ". date("m/d/Y");
+fwrite($filewbid, $txt);
+fwrite($filewbid, "\n");
+
+            $str3="information/"."p".$_POST["seniorname"].".txt";
+        $str4 = (int)$_POST["amount"];
+        $pricefile = fopen($str3, "r") or die("Unable to open file!");
+         
+         if ($str4 > (int)fgets($pricefile) ){
+
+         $pricefile=fopen($str3, "w") or die("Unable to open file!");
+          fwrite($pricefile, $str4);
+            fclose($pricefile);
+            $str = "information/".$_POST["seniorname"].".txt";
+            $filename = fopen($str, "w") or die("Unable to open file!");
+$txt ="";
+$str2 = $_POST["seniorname"];
+
+$txt1 = findSenior($str2);
+$txt = $txt1.": "."$".$str4;
+
+fwrite($filename, $txt);
+fclose($filename);
+
+$txtend = $txt1.": "."$".$str4." by ".$_POST["email"];
+$strend = "information/"."end".$_POST["seniorname"].".txt";
+$filenameend = fopen($strend, "w") or die("Unable to open file!");
+fwrite($filenameend, $txtend);
+fclose($filenameend);
+
+
+    $mess =  "Bidded!";
+    $message = $mess.", check your email to verify ";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+            
+  }
+         else {
+             $AErr = "Your bid is lower than the lastest bid";
+             echo "<script type='text/javascript'>alert('$AErr');</script>";
+        
+         }
+
 }
 
 
-$message = "Sent! Check your email to verify ".$mess;
 
-echo "<script type='text/javascript'>alert('$message');</script>";
 fclose($filewbid);
 } 
 }
@@ -359,7 +367,7 @@ fclose($filefdata);
   <input type="text" name="matha" placeholder="prove that you are human" value="">
   <span class="error"> <?php echo $mathErr;?></span> </input>
   <br></br>
-  <input type="submit" value="SEND!">
+  <input type="submit" value="BID!">
 </form> 
 </center>
 

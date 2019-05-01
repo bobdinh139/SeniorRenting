@@ -45,7 +45,7 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 + ~~Use file to list all names~~
 
-+ ~~fix~~ improve drawback(s)
++ ~~fix~~ ~~improve drawback(s)~~
 
 ## NOTES
 

@@ -36,7 +36,17 @@ $str = "information/".$x."m".".txt";
 
 $str2=$x."m";
 
+$strend = "information/"."end".$x."m".".txt";
+
 $str3="information/"."p".$x."m".".txt";
+
+if(!file_exists($strend)){
+
+$filemdata = fopen($strend, "w") or die("Unable to open file!");
+
+fwrite($filemdata, "");
+
+}
 
 if(!file_exists($str3)){
 
@@ -80,6 +90,7 @@ $allstudentg = "allstug.txt";
 for ($x = 0; $x <= $countf; $x++) {
 
 $str = "information/".$x."f".".txt";
+$strend = "information/"."end".$x."f".".txt";
 
 $str2 = $x."f";
 
@@ -87,7 +98,13 @@ $str3 = "information/"."p".$x."f".".txt";
 
 $txt = "";
 
+if(!file_exists($strend)){
 
+$filemdata = fopen($strend, "w") or die("Unable to open file!");
+
+fwrite($filemdata, "");
+
+}
 
 if(!file_exists($str)){
 
