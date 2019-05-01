@@ -626,7 +626,7 @@ fclose($filemdata);
 <p>plugin: AOS</p>
 <p>Mailing: PHPMailer</p>
 <p>Timer support for Safari: momentjs</p>
-<p>Slide-Show: Jssor</p>p
+<p>Slide-Show: Jssor</p>
 <p>UIGradient</p>
 <p>W3Schools</p>
 </refer></center>
