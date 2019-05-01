@@ -47,15 +47,19 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 + ~~fix~~ ~~improve drawback(s)~~
 
-## NOTES
++ Create Admin tools(?)
 
-Mail() branch (deprecated and deleted) uses mail() instead of PHPMailer. 
++ Add more images at the top of the website (w/ images of west students shuffle through)
+
+## NOTES
 
 Password in _allsenoirname.php_ is not encrypted for the sake of simplicity.
 
 ## Credits
 
-Plugin: [AOS](https://michalsnik.github.io/aos/) (Animation)
+Designing/Developing: [@nullflows](https://github.com/nullflows)
+
+Animation: [AOS](https://michalsnik.github.io/aos/) 
 
 Mailing: [PHPMailer](https://github.com/PHPMailer/PHPMailer) 
 
@@ -64,6 +68,4 @@ Timer support for Safari: [momentjs](https://momentjs.com/)
 Background: [UIGradients](https://uigradients.com/#Terminal)
 
 Some functions: [W3schools](https://www.w3schools.com/)
-
-
 
