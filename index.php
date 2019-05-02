@@ -610,15 +610,16 @@ fclose($filemdata);
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <refer><h2>About/Benefits</h2>
 <p> Seniors’ secret names are used for anonymity purposes</p>
-<p>Update real-time</p>
-<p>Bidding history, but no seniors' names revealed (only a person who bids)</p>
-<p>User can see how many times they have left until senior bidding expired</p>
+<p>Update in real-time</p>
+<p>Show bidding history, but no names revealed (only bidder's email)</p>
+<p>Users can see how much time they have left until the bid expires</p>
 <p>User can see who wins which senior</p>
 <p>User will receive an email confirmation</p>
 <p>Fully Open-source</p>
 <p>User can request features, create PR(s) and report issues  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
+<p>Receive updates frequently </p>
 </center>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</pp>
 <hr>
 
 <center><refer><h2>This website is made possible by:</h2></refer></center>

@@ -1,3 +1,38 @@
+## Description 
+
+_for bidders,_
+
+Feeling lost and confused about what is going on because google form not update in real-time?  
+
+Or tired of asking how much time you have left until the bid expires, and/or tired of asking who wins.
+
+_for moderators, _
+
+Maybe you find yourself looking through the whole list of bidders just to find the winner for _every_ senior.
+
+> Then, this website is the solution for that frustration. Here are some features that _I_ added to the website:
+
+## Benefits/Features
+
++ Update in real-time
+
++ Show bidding history, but no names revealed (only bidder's email and senior's code name)
+
++ Users can see how much time they have left until the bid expires
+
++ User can see who wins which senior
+
++ User will receive an email confirmation 
+
++ Add/Remove seniors easily through website during the registration process
+
++ Provided with admin tool to remove bid(s) with ease if the bid(s) is/are not legit 
+
++ User can request features, create PR(s) and report issues
+
++ Fully Open-source
+
++ Receive updates frequently 
 
 # How - to
 
@@ -11,27 +46,7 @@ SET-UP
 
 3. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 
-4. Moderating, if the bid(s) is not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` for removing bid(s)) 
-
-## Benefits?
-
-+ Add/Remove seniors easily through website 
-
-+ Update real-time
-
-+ Bidding history, but no seniors' names revealed (only a person who bids and senior's secret name)
-
-+ User can see how many times they have left until senior bidding expired 
-
-+ User can see who wins which senior
-
-+ User will receive an email confirmation 
-
-+ Provided with admin tool to easily remove bid(s) if the bid(s) is/are not legit 
-
-+ User can request features, create PR(s) and report issues
-
-+ Fully Open-source
+4. Moderating, if the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
 
 ## Drawback(s)?
 
