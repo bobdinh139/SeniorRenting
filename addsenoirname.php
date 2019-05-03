@@ -115,8 +115,8 @@ $nameremove = $_POST["usernameremove"];
  $f = fopen($_POST["gender"], "w");  
  fwrite($f, $out);  
  fclose($f);  
-
  
+
 
      echo "Removed!";
 

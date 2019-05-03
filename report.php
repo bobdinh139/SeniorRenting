@@ -194,10 +194,7 @@ echo "<script type='text/javascript'>alert('$amountErr');</script>";
 if ($_POST["acreport"] == "null") {
     $emailErr = "empty bidder";
 $checc = -1;  
-}elseif (empty($_POST["yoemail"])) {
-    $emailErr = "your email is empty";
-$checc = -1;  
-} 
+}
 
 
      $tempc = strtolower($_POST["reason"]);
@@ -209,6 +206,7 @@ $checc = -1;
     }
     
     if (!filter_var($_POST["yoemail"], FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Failed, check your email and try again!";
 $checc =-1;
  
 }
@@ -231,9 +229,9 @@ $mail->SMTPSecure = 'tls'; // ssl is deprecated
 $mail->SMTPAuth = true;
 $mail->Username = 'your email'; // email
 $mail->Password = 'pass'; // password
-$mail->setFrom($_POST["yoemail"], 'nullflows smart fridge'); // From email and name
+$mail->setFrom($_POST["yoemail"], 'nullflows smart cleaner'); // From email and name
 $mail->addAddress("your email", 'Admin'); // to email and name
-$mail->Subject = 'Verify bidding';
+$mail->Subject = 'Report';
 $mail->msgHTML("Report ".$_POST["acreport"]." reason ".$_POST["reason"]); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
 $mail->AltBody = 'HTML messaging not supported'; // If html emails is not supported by the receiver, show this body
 // $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
@@ -243,9 +241,9 @@ if(!$mail->send()){
 }else{
     $mess =  "Message sent!";
 }
-$message = "Sent!".$mess;
+$message = "Sent! ".$mess;
 echo "<script type='text/javascript'>alert('$message');</script>";
-fclose($filewbid);
+
 } 
 
 
