@@ -6,7 +6,7 @@ Feeling lost and confused about what is going on because google form not update 
 
 Or tired of asking how much time you have left until the bid expires, and/or tired of asking who wins.
 
-_for moderators, _
+_for moderators,_
 
 Maybe you find yourself looking through the whole list of bidders just to find the winner for _every_ senior.
 
@@ -20,15 +20,17 @@ Maybe you find yourself looking through the whole list of bidders just to find t
 
 + Users can see how much time they have left until the bid expires
 
-+ User can see who wins which senior
++ Users can see who wins which senior
 
-+ User will receive an email confirmation 
++ Users will receive an email confirmation 
+
++ Users can report bidder(s)
 
 + Add/Remove seniors easily through website during the registration process
 
 + Provided with admin tool to remove bid(s) with ease if the bid(s) is/are not legit 
 
-+ User can request features, create PR(s) and report issues
++ Users can request features, create PR(s) and report issues
 
 + Fully Open-source
 
@@ -85,6 +87,8 @@ Animation: [AOS](https://michalsnik.github.io/aos/)
 Mailing: [PHPMailer](https://github.com/PHPMailer/PHPMailer) 
 
 Timer support for Safari: [momentjs](https://momentjs.com/)
+
+Gradient-button: [gradienbuttons](https://gradientbuttons.colorion.co/)
 
 Background: [UIGradients](https://uigradients.com/#Terminal)
 
