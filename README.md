@@ -44,7 +44,7 @@ SET-UP
 
 2. Add bad words to the list (prevent user from entering bad words). 
 
-3. Add images for slide-show at ```/image/```
+3. Add images for slide-show at ```/image/``` (image size: width: 980px; height: 380px)
 
 3. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
 

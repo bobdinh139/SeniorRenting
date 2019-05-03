@@ -76,6 +76,9 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
                 <img data-u="image" src="image/001.png" />
             </div>
     <div>
+                <img data-u="image" src="image/002.png" />
+            </div>
+            <div>
                 <img data-u="image" src="image/003.png" />
             </div>
             <div>
@@ -88,16 +91,13 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
                 <img data-u="image" src="image/006.png" />
             </div>
             <div>
-                <img data-u="image" src="image/001.png" />
+                <img data-u="image" src="image/007.png" />
             </div>
             <div>
-                <img data-u="image" src="image/001.png" />
+                <img data-u="image" src="image/008.png" />
             </div>
             <div>
-                <img data-u="image" src="image/001.png" />
-            </div>
-            <div>
-                <img data-u="image" src="image/001.png" />
+                <img data-u="image" src="image/009.png" />
             </div>
             <div>
                 <img data-u="image" src="image/001.png" />
