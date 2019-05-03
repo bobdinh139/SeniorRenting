@@ -37,57 +37,7 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
     <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
 
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:800,$Opacity:2}
-            ];
-
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
     <style>
         /*jssor slider loading skin spin css*/
         .jssorl-009-spin img {
@@ -182,6 +132,7 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
             </svg>
         </div>
     </div>
+         <script src="js/javascript.js"></script>
     <script type="text/javascript">jssor_1_slider_init();</script>
     <!-- #endregion Jssor Slider End -->
  </div>
@@ -409,6 +360,7 @@ fwrite($filewbid, "\n");
             $prefile=fopen($pre, "a") or die("Unable to open file!");
             fwrite($prefile, $_POST["amount"]."\n");
             fclose($prefile);
+
              $listbfile=fopen($listor, "a") or die("Unable to open file!");
             fwrite($listbfile, $_POST["email"]."\n");
             fclose($listbfile);
@@ -480,12 +432,6 @@ function test_input($data) {
     
 
   <?php
-  $countf = 0;
-$fileread = fopen("allstug.txt", "r");
-while (!feof($fileread)){
-$line = fgets($fileread);
-    $countf ++;
-}
 
 
           $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
@@ -504,12 +450,6 @@ fclose($filefdata);
 ?>
 
     <?php
-  $count = 0;
-$fileread = fopen("allstub.txt", "r");
-while (!feof($fileread)){
-$line = fgets($fileread);
-    $count ++;
-}
 
           $filefdata = fopen("allstub.txt", "r") or die("Unable to open file!");
 $i =0;
@@ -669,8 +609,9 @@ fclose($filemdata);
 <p>Update in real-time</p>
 <p>Show bidding history, but no names revealed (only bidder's email)</p>
 <p>Users can see how much time they have left until the bid expires</p>
-<p>User can see who wins which senior</p>
-<p>User will receive an email confirmation</p>
+<p>Users can see who wins which senior</p>
+<p>Users can report bidder(s)</p>
+<p>Users will receive an email confirmation</p>
 <p>Fully Open-source</p>
 <p>User can request features, create PR(s) and report issues  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
 <p>Receive updates frequently </p>

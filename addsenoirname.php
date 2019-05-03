@@ -33,8 +33,37 @@ if(!($_POST["gender"] == "null")){
      
     
    
-    $filewbid = fopen($_POST("gender"), "a") or die("Unable to open file!");
+    $filewbid = fopen($_POST["gender"], "a") or die("Unable to open file!");
     fwrite($filewbid, "\n".$nameadd);
+     fclose($filewbid);
+   
+    if ($_POST["gender"]== "allstug.txt"){
+
+        $countf = 0;
+$fileread = fopen("allstug.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $countf ++;
+}
+    $filewbid = fopen("information/".$countf."f".".txt", "w") or die("Unable to open file!");
+    fwrite($filewbid, $nameadd);
+    fclose($filewbid);
+    }
+    elseif($_POST["gender"]=="allstub.txt") {
+        $countf = 0;
+$fileread = fopen("allstub.txt", "r");
+while (!feof($fileread)){
+$line = fgets($fileread);
+    $countf ++;
+}
+    $filewbid = fopen("information/".$countf."m".".txt", "w") or die("Unable to open file!");
+    fwrite($filewbid, $nameadd);
+    fclose($filewbid);
+
+
+    }
+
+     
      echo "added!";
 
     }
@@ -86,6 +115,9 @@ $nameremove = $_POST["usernameremove"];
  $f = fopen($_POST["gender"], "w");  
  fwrite($f, $out);  
  fclose($f);  
+
+ 
+
      echo "Removed!";
 
  

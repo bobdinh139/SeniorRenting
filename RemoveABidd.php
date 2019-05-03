@@ -130,7 +130,16 @@ while ($char !== false && $char !== "\n" && $char !== "\r") {
     $char = fgetc($f);
 }
 
+$testline = $line;
+
+if(empty(trim($testline))){
+return "0";
+}
+else {
 return $line;
+
+}
+
 
 }
 
@@ -188,13 +197,6 @@ Latest bid remove <br>
   <option value ="null">Nobody</option>
 
   <?php
-  $countf = 0;
-$fileread = fopen("allstug.txt", "r");
-while (!feof($fileread)){
-$line = fgets($fileread);
-    $countf ++;
-}
-
 
           $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
 $i =0;
@@ -212,12 +214,7 @@ fclose($filefdata);
 ?>
 
     <?php
-  $count = 0;
-$fileread = fopen("allstub.txt", "r");
-while (!feof($fileread)){
-$line = fgets($fileread);
-    $count ++;
-}
+
 
           $filefdata = fopen("allstub.txt", "r") or die("Unable to open file!");
 $i =0;

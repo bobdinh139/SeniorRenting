@@ -34,7 +34,7 @@ Maybe you find yourself looking through the whole list of bidders just to find t
 
 + Fully Open-source
 
-+ Receive updates frequently 
++ Receives updates frequently 
 
 # How - to
 
