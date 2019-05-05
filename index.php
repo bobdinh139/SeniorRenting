@@ -149,6 +149,7 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
 
 <section id ="amount">
 <?php
+// random number generator
 	$min_number = 1;
 	$max_number = 15;
 
@@ -173,6 +174,7 @@ $firstNumber = $_POST["firstNumber"];
 $secondNumber = $_POST["secondNumber"];
 $checkTotal = $firstNumber + $secondNumber;
 
+// find senior function 
 function findSenior($str2){
     $str22 = substr($str2, -1,1);
     $str33 = substr($str2, 0,1);
@@ -197,7 +199,7 @@ function findSenior($str2){
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+// check if the math is correct
 if (empty($_POST["matha"])){
    
 $mathErr = "Math is required";
@@ -226,7 +228,7 @@ echo "<script type='text/javascript'>alert('$amountErr');</script>";
 
    }   
 }
-
+//other checkings 
 if ($amount != ""){
 
 $txt = $amount;
@@ -272,7 +274,7 @@ if ($checc == -1){
     echo "<script type='text/javascript'>alert('$emailErr');</script>"; 
 }
             $str4 = (int)$_POST["amount"];
-
+// check if the newer bid bigger than the latest bid
 if ($checc==0){
 $str3="information/"."p".$_POST["seniorname"].".txt";
 $pricefile = fopen($str3, "r") or die("Unable to open file!");     
@@ -286,7 +288,7 @@ $pricefile = fopen($str3, "r") or die("Unable to open file!");
       $checc = -1;  
   }
 }
-
+// if there is no error, send email confirmation
 if ($checc == 0){
 
 
@@ -299,7 +301,7 @@ $str2=$_POST["seniorname"];
 $txt ="";
 
 $txt = findSenior($str2);
-
+//send email
 $mail = new PHPMailer;
 $mail->isSMTP(); 
 $mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
@@ -333,20 +335,22 @@ fwrite($filewbid, "\n");
             $str4 = (int)$_POST["amount"];
                 $bidder="information/allbidder.txt";
 
-           
+           // write all the bidders to a file in order to report later
             $prefile=fopen($bidder, "a") or die("Unable to open file!");
             fwrite($prefile, $_POST["email"]."\n");
             fclose($prefile);
 
-
+             //write all the prices of a specific senior to a file
             $prefile=fopen($pre, "a") or die("Unable to open file!");
             fwrite($prefile, $_POST["amount"]."\n");
             fclose($prefile);
 
+             //write all the bidder for a specific senior in a file
              $listbfile=fopen($listor, "a") or die("Unable to open file!");
             fwrite($listbfile, $_POST["email"]."\n");
             fclose($listbfile);
 
+            // write the price to a specific senior file
          $pricefile=fopen($str3, "w") or die("Unable to open file!");
           fwrite($pricefile, $str4);
             fclose($pricefile);
@@ -360,7 +364,7 @@ $txt = $txt1.": "."$".$str4;
 
 fwrite($filename, $txt);
 fclose($filename);
-
+// write to a file with the bidder name + senior name when expired.php is executed
 $txtend = $txt1.": "."$".$str4." by ".$_POST["email"];
 $strend = "information/"."end".$_POST["seniorname"].".txt";
 $filenameend = fopen($strend, "w") or die("Unable to open file!");
@@ -396,7 +400,7 @@ fclose($filewbid);
 
 
 
-
+// remove all the space, weird characters of the bid
 function removeund($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -424,7 +428,7 @@ function removeund($data) {
     
 
   <?php
-
+// display all the girls to the dropdown menu
 
           $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
 $i =0;
@@ -442,7 +446,7 @@ fclose($filefdata);
 ?>
 
     <?php
-
+// display all the boys to the dropdown menu
           $filefdata = fopen("allstub.txt", "r") or die("Unable to open file!");
 $i =0;
 while(! feof($filefdata))
@@ -487,6 +491,7 @@ fclose($filefdata);
 
 <?php
 ini_set( "display_errors", 0); 
+// display logs 
 $filewbid = fopen("information/amount.txt", "r") or die("Unable to open file!");
 while(! feof($filewbid))
   {
@@ -507,6 +512,7 @@ fclose($filewbid);
 <center><h4>Price for each person</h4></center>
 
 <?php
+// display all students + their prices
 ini_set( "display_errors", 0); 
 $countf = 0;
 $fileread = fopen("allstug.txt", "r");

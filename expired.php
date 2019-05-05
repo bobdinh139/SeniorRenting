@@ -4803,7 +4803,7 @@ var x = setInterval(function() {
 
 
   <?php
-
+// shows all seniors' secret names
           $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
 $i =0;
 while(! feof($filefdata))
@@ -4850,6 +4850,7 @@ fclose($filefdata);
 
 <?php
 ini_set( "display_errors", 0); 
+// display logs
 $filewbid = fopen("information/amount.txt", "r") or die("Unable to open file!");
 while(! feof($filewbid))
   {
@@ -4871,6 +4872,7 @@ fclose($filewbid);
 
 <?php
 ini_set( "display_errors", 0); 
+//display seniors with who wins
 $countf = 0;
 $fileread = fopen("allstug.txt", "r");
 while (!feof($fileread)){

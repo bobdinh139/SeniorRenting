@@ -135,7 +135,7 @@ if(!($_POST["gender"] == "null")){
      if(!(empty($_POST["usernameadd"]))){
  if ( $pass==$apass ){
      
-    
+    // add names by writting to the allstub.txt and allstug.txt
    
     $filewbid = fopen($_POST["gender"], "a") or die("Unable to open file!");
     fwrite($filewbid, "\n".$nameadd);
@@ -211,7 +211,7 @@ $nameremove = $_POST["usernameremove"];
  if ( $pass==$apass ){
      
  
- 
+ //scan for the name in allstub.txt/allstug.txt and remove it
 
 
  $lines = file($_POST["gender"]); 

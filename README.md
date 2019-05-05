@@ -95,3 +95,13 @@ You should refresh the website frequently to check for any new bids/updates as i
 
 + Some functions: [W3schools](https://www.w3schools.com/)
 
+#### Demo 
+
+[here](https://rentingseniorbynull.000webhostapp.com/)
+
+#### License
+
+GNU Lesser General Public License v2.1
+
+
+

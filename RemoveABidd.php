@@ -133,6 +133,7 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
 $apass = "01234567890";
 $pass = $_POST["pass"];
 $bidremove = $_POST["bidremove"];
+//typical find senior function
 function findSenior($str2){
     $str22 = substr($str2, -1,1);
     $str33 = substr($str2, 0,1);
@@ -151,6 +152,8 @@ function findSenior($str2){
     }
    return $txt;
 }
+
+// this function removes the lastest bid and read the latest bid after the bid was removed
 
 function rem($fileread){
 
@@ -252,7 +255,7 @@ return $line;
           
 
 
-
+        
          $fileread = "information/pre".$_POST["bidremove"].".txt";
          $listor="information/"."listor".$_POST["bidremove"].".txt";
          $nameend="information/"."end".$_POST["bidremove"].".txt";
@@ -260,20 +263,22 @@ return $line;
 
          $str = "information/".$_POST["bidremove"].".txt";
 
-         
+         // read all the previous bids abd remove the latest one, read the latest one after the latest one was removed
          $line = rem($fileread);
          $filename = fopen($str, "w") or die("Unable to open file!");
          $str4 = $line;
          $str2 = $_POST["bidremove"];
          $txt1 = findSenior($str2);
          $txt = $txt1.": "."$".$str4;
+         // delete the lastest line in log
          fwrite($filename, $txt);
          fclose($filename);
+         //change the price of current senior
          $filename = fopen($price, "w") or die("Unable to open file!");                  
          fwrite($filename, $str4);
          fclose($filename);
  
-
+         // rewrite for the end file in order to show after the expired.php is executed
          $line = rem($listor);
          $str2 = $_POST["bidremove"];
          $txt1 = findSenior($str2);
@@ -301,7 +306,7 @@ Latest bid remove <br>
   <option value ="null">Nobody</option>
 
   <?php
-
+// shows all seniors
           $filefdata = fopen("allstug.txt", "r") or die("Unable to open file!");
 $i =0;
 while(! feof($filefdata))

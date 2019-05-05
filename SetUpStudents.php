@@ -1,5 +1,6 @@
 <?php
-
+// this is for creating all the seniors' data based on allstub.txt and allstug.txt 
+// if the file does not exist, create and write to it accordingly
 if(!file_exists("information/amount.txt")){
 
 $filemdata = fopen("information/amount.txt", "w") or die("Unable to open file!");

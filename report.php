@@ -153,7 +153,7 @@ error_reporting(0);
 error_reporting(E_ALL & ~E_NOTICE);
  $bad = array("","","",""); /*Bad words here */
 
-
+//checkings
 $checkemail = "@dogrschools.org";
 $tocheck = $_POST["yoemail"];
 $checc = 0;
@@ -206,7 +206,7 @@ $checc = -1;
 if ($checc == 0){
 $amount = removeuns($_POST["reason"]);
 } 
-
+//send email if everything is good
 if ($checc == 0){
 require $_SERVER['DOCUMENT_ROOT'] . '/mail/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/mail/PHPMailer.php';
@@ -256,6 +256,7 @@ function removeuns($data) {
 <option value="null">Select Bidder</option>
 
    <?php
+   // read from file all bidder and remove duplicates
  $bidder="information/allbidder.txt";
 
 $lines = file($bidder);
