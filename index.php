@@ -322,7 +322,7 @@ if(!$mail->send()){
     echo "<script type='text/javascript'>alert('$message');</script>";
 }else{
     $filewbid = fopen("information/amount.txt", "a") or die("Unable to open file!");
-$txt = "Amount: $".$amount." for ".$_POST["seniorname"]." ".$toapp." ".$_POST["email"]." ". "at ". date("m/d/Y");
+$txt = "Amount: $".$amount." for ".$_POST["seniorname"]." "."by"." ".$_POST["email"]." ". "at ". date("m/d/Y");
 fwrite($filewbid, $txt);
 fwrite($filewbid, "\n");
 
