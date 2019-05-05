@@ -156,64 +156,55 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 $checkemail = "@dogrschools.org";
 $tocheck = $_POST["yoemail"];
+$checc = 0;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
 if (isset($_POST["acreport"])){
-    if ($_POST["acreport"] =="null"){
-        $ee ="Cannot choose nobody and then report!";
+
+   if ($_POST["acreport"] == "null" ) {
+ $ee ="Cannot choose nobody and then report!";
         echo "<script type='text/javascript'>alert('$ee');</script>";
-        $chekk =-1;
-    }
-    
-if (empty($_POST["yoemail"])) {
-    $emailErr = "Email is required";
-  
-  } else {
- if (!filter_var($_POST["yoemail"], FILTER_VALIDATE_EMAIL)) {
-          $emailErr = "Only emails allowed"; 
-echo "<script type='text/javascript'>alert('$emailErr');</script>"; 
- 
-}
-elseif(!(strpos( $tocheck, $checkemail)!==false)){
-      $emailErr = "Only West emails allowed"; 
-echo "<script type='text/javascript'>alert('$emailErr');</script>";
-        $chekk =-1;
-}
-  if (empty($_POST["reason"])) {
-    $amountErr = "Reason is required";
-echo "<script type='text/javascript'>alert('$amountErr');</script>"; 
-  } else {
-   
-
-    }
-
-    if ($chekk == 0){
-    $amount = test_input($_POST["reason"]);
-   }
-  }
-}
-
-if ($_POST["acreport"] == "null") {
-    $emailErr = "empty bidder";
 $checc = -1;  
 }
 
-
-     $tempc = strtolower($_POST["reason"]);
+  if (empty($_POST["reason"])) {
+    $amountErr = "Reason is required";
+echo "<script type='text/javascript'>alert('$amountErr');</script>"; 
+$checc = -1;
+  } else {
+    
+$tempc = strtolower($_POST["reason"]);
  foreach ($bad as &$value) {
     if (strpos($tempc, $value) !== false){
       $emailErr = "Bad words are not allowed";
+      echo "<script type='text/javascript'>alert('$emailErr');</script>";
+
       $checc = -1;
     }
     }
-    
-    if (!filter_var($_POST["yoemail"], FILTER_VALIDATE_EMAIL)) {
+}
+
+ if (!filter_var($_POST["yoemail"], FILTER_VALIDATE_EMAIL)) {
         $emailErr = "Failed, check your email and try again!";
 $checc =-1;
  
+}elseif(!(strpos( $tocheck, $checkemail)!==false)){
+      $emailErr = "Only West emails allowed"; 
+echo "<script type='text/javascript'>alert('$emailErr');</script>";
+        $checc =-1;
+ }
+}else{
+$amountErr = "Cannot report null";
+echo "<script type='text/javascript'>alert('$amountErr');</script>"; 
+$checc = -1;
 }
 
-if ($checc == -1){
-    echo "<script type='text/javascript'>alert('$emailErr');</script>"; 
-}
+
+
+if ($checc == 0){
+$amount = removeuns($_POST["reason"]);
+} 
+
 if ($checc == 0){
 require $_SERVER['DOCUMENT_ROOT'] . '/mail/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/mail/PHPMailer.php';
@@ -245,9 +236,10 @@ $message = "Sent! ".$mess;
 echo "<script type='text/javascript'>alert('$message');</script>";
 
 } 
+}
 
 
-function test_input($data) {
+function removeuns($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);

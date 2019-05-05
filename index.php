@@ -143,7 +143,7 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
 
 <center><info>
 <i>
-<p>Please do not spam/use email(s) that is/are not yours</p>
+<p>Please do not spam/use email(s) that is/are not yours; by doing so, you may get yourself in serious consequences.</p>
 </i>
 </info></center>
 
@@ -203,79 +203,50 @@ if (empty($_POST["matha"])){
 $mathErr = "Math is required";
 echo "<script type='text/javascript'>alert('$mathErr');</script>"; 
 }else {
-    if($captchaResult == $checkTotal){
-        
-    }
-    else {
-        $mathErr="Wrong answer"; 
-        echo "<script type='text/javascript'>alert('$mathErr');</script>"; 
-    }
-}
-
-
-    
-}
-
-$checkemail = "@dogrschools.org";
+    $checkemail = "@dogrschools.org";
 $tocheck = $_POST["email"];
-if (isset($_POST["seniorname"])){
-    if ($_POST["seniorname"] =="null"){
-        $ee ="Cannot choose nobody and then submit!";
-        echo "<script type='text/javascript'>alert('$ee');</script>";
-        $chekk =-1;
-    }
-    
-if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  
-  } else {
- if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-          $emailErr = "Only emails allowed"; 
-echo "<script type='text/javascript'>alert('$emailErr');</script>"; 
- 
-}
-elseif(!(strpos( $tocheck, $checkemail)!==false)){
-      $emailErr = "Only West emails allowed"; 
-echo "<script type='text/javascript'>alert('$emailErr');</script>";
-        $chekk =-1;
-}
-
+if($captchaResult == $checkTotal){
+$checc = 0;
 
   if (empty($_POST["amount"])) {
     $amountErr = "amount is required";
-echo "<script type='text/javascript'>alert('$amountErr');</script>"; 
+echo "<script type='text/javascript'>alert('$amountErr');</script>";
+    $chekk=-1; 
+    $checc = -1;
   } else {
 
     if (!is_numeric ($_POST["amount"])){
       $amountErr = "Please enter a number";
       echo "<script type='text/javascript'>alert('$amountErr');</script>"; 
       $chekk = -1;
+      $checc = -1;
     }
     elseif ($chekk==0)  {
-    $amount = test_input($_POST["amount"]);
+    $amount = removeund($_POST["amount"]);
 
-   }
-
-        
-    }
-
-  }
+   }   
 }
 
-if($captchaResult == $checkTotal){
-$checc = 0;
 if ($amount != ""){
 
 $txt = $amount;
-$toapp = "by";
+
+if (isset($_POST["seniorname"])){
+    if ($_POST["seniorname"] =="null"){
+        $ee ="Cannot choose nobody and then bid!";
+        echo "<script type='text/javascript'>alert('$ee');</script>";
+        $checc =-1;
+    }
+    }
 
 if (empty($_POST["seniorname"])) {
     $emailErr = "empty name";
 $checc = -1;  
 }
 
+
 if (empty($_POST["email"])) {
-    $emailErr = "empty name";
+    $emailErr = "Email is required";
 $checc = -1;  
 } else {
      $tempc = strtolower($_POST["email"]);
@@ -287,16 +258,35 @@ $checc = -1;
     }
     
     if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+               $emailErr = "Only emails allowed"; 
 $checc =-1;
  
+}elseif(!(strpos( $tocheck, $checkemail)!==false)){
+      $emailErr = "Only West emails allowed"; 
+        $checc =-1;
 }
 
 }
-
 
 if ($checc == -1){
     echo "<script type='text/javascript'>alert('$emailErr');</script>"; 
 }
+            $str4 = (int)$_POST["amount"];
+
+if ($checc==0){
+$str3="information/"."p".$_POST["seniorname"].".txt";
+$pricefile = fopen($str3, "r") or die("Unable to open file!");     
+  $tocheckbd = (int)fgets($pricefile);
+         fclose($pricefile);
+
+
+  if ($str4 <= $tocheckbd ){
+       $AErr = "Your bid must be higher than the lastest bid";
+             echo "<script type='text/javascript'>alert('$AErr');</script>";
+      $checc = -1;  
+  }
+}
+
 if ($checc == 0){
 
 
@@ -343,15 +333,7 @@ fwrite($filewbid, "\n");
             $str4 = (int)$_POST["amount"];
                 $bidder="information/allbidder.txt";
 
-
-        $pricefile = fopen($str3, "r") or die("Unable to open file!");
-        
-         $tocheckbd = (int)fgets($pricefile);
-         fclose($pricefile);
-
-         if ($str4 > $tocheckbd ){
-
-             
+           
             $prefile=fopen($bidder, "a") or die("Unable to open file!");
             fwrite($prefile, $_POST["email"]."\n");
             fclose($prefile);
@@ -390,12 +372,8 @@ fclose($filenameend);
     $message = $mess.", check your email to verify ";
     echo "<script type='text/javascript'>alert('$message');</script>";
             
-  }
-         else {
-             $AErr = "Your bid is lower than the lastest bid";
-             echo "<script type='text/javascript'>alert('$AErr');</script>";
-        
-         }
+
+
 
 }
 
@@ -405,7 +383,21 @@ fclose($filewbid);
 } 
 }
 }
-function test_input($data) {
+    else {
+        $mathErr="Wrong answer"; 
+        echo "<script type='text/javascript'>alert('$mathErr');</script>"; 
+    }
+}
+
+
+    
+}
+
+
+
+
+
+function removeund($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
@@ -614,7 +606,7 @@ fclose($filemdata);
 <p>Users will receive an email confirmation</p>
 <p>Fully Open-source</p>
 <p>User can request features, create PR(s) and report issues  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
-<p>Receive updates frequently </p>
+<p>Receives updates frequently </p>
 </center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</pp>
 <hr>
