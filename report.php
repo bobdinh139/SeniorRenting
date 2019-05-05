@@ -159,7 +159,7 @@ $tocheck = $_POST["yoemail"];
 $checc = 0;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-if (isset($_POST["acreport"])){
+if (isset($_POST["acreport"]) || $_POST["acreport"] == ""){
 
    if ($_POST["acreport"] == "null" ) {
  $ee ="Cannot choose nobody and then report!";
@@ -186,6 +186,8 @@ $tempc = strtolower($_POST["reason"]);
 
  if (!filter_var($_POST["yoemail"], FILTER_VALIDATE_EMAIL)) {
         $emailErr = "Failed, check your email and try again!";
+              echo "<script type='text/javascript'>alert('$emailErr');</script>";
+
 $checc =-1;
  
 }elseif(!(strpos( $tocheck, $checkemail)!==false)){
