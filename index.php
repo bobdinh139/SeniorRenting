@@ -596,30 +596,26 @@ fclose($filemdata);
 <center> 
 <hr>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<refer><h2>About/Benefits</h2>
+<refer><h2>About</h2>
 <p> Seniors’ secret names are used for anonymity purposes</p>
-<p>Update in real-time</p>
-<p>Show bidding history, but no names revealed (only bidder's email)</p>
-<p>Users can see how much time they have left until the bid expires</p>
-<p>Users can see who wins which senior</p>
-<p>Users can report bidder(s)</p>
-<p>Users will receive an email confirmation</p>
-<p>Fully Open-source</p>
-<p>User can request features, create PR(s) and report issues  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
-<p>Receives updates frequently </p>
+<p>You should refresh the website frequently to check for any new bids/updates as it is written in php </p>
+<p>Verification link is <b><i>NOT</i></b> gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
+and you have to reply back if there is anything wrong.</p>
+<p>User can see who wins which senior and seniors' secret names after senior renting ends</p>
+<p>User can request features, create PR(s), report issues and view source-code  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
 </center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</pp>
 <hr>
 
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <center><refer><p> Designing/developing <a href="https://iwillpllugmyself/nullflows"> @nullflows</a></p>
-<p>plugin: AOS</p>
-<p>Mailing: PHPMailer</p>
-<p>Timer support for Safari: momentjs</p>
-<p>Slide-Show: Jssor</p>
-<p>gradientbuttons.colorion.co</p>
-<p>UIGradient</p>
-<p>W3Schools</p>
+<p>plugin:  <a href="https://michalsnik.github.io/aos/">AOS</a></p>
+<p>Mailing:  <a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a></p>
+<p>Timer support for Safari: <a href="https://momentjs.com/"> momentjs</a></p>
+<p>Slide-Show: <a href="https://www.jssor.com/"> Jssor</a></p>
+<p>report button:  <a href="https://gradientbuttons.colorion.co/">gradientbuttons</a></p>
+<p>Background:  <a href="https://uigradients.com/#Terminal">UIGradient</a></p>
+<p>Some functions:  <a href="https://www.w3schools.com/">W3Schools</a></p>
 </refer></center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>
