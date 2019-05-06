@@ -58,6 +58,8 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 ## TO-DO
 
++ Fix the the price counting algorithm in blind-bidding
+
 + Test in wider range
 
 + ~~countdown timer~~
@@ -78,6 +80,9 @@ Passwords in ```addsenoirname.php ``` and ``` RemoveABidd.php ``` are not encryp
 
 Verification link is _NOT_ gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
 and you have to reply back if there is anything wrong.
+
+In the blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for every senior will be
+raised over time. This does not neccessary mean it is the price of that senior; the actual price can be higher/lower. 
 
 You should refresh the website frequently to check for any new bids/updates as it is written in php 
 
