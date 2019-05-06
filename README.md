@@ -58,21 +58,19 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 ## TO-DO
 
-+ ~~Fix the the price counting algorithm in blind-bidding~~
+- [x] Fix the the price counting algorithm in blind-bidding
 
-+ Test in wider range
+- [ ] Test in wider range
 
-+ ~~countdown timer~~
+- [x] countdown timer
 
-+ ~~Change secret names to actual name when sending an email~~
+- [x] Change secret names to actual name when sending an email
 
-+ ~~Use file to list all names~~
+- [x] Use file to list all names
 
-+ ~~fix~~ ~~improve drawback(s)~~
+- [x] Create Admin tools(?)
 
-+ ~~Create Admin tools(?)~~
-
-+ ~~Add more images at the top of the website (w/ images of west students shuffle through)~~
+- [x] Add more images at the top of the website (w/ images of west students shuffle through)
 
 ## NOTES
 
@@ -86,7 +84,7 @@ raised over time. This does not neccessary mean it is the price of that senior; 
 
 You should refresh the website frequently to check for any new bids/updates as it is written in php 
 
-## Credits
+## This website is brought to you by
 
 + Designing/Developing: [@nullflows](https://github.com/nullflows)
 

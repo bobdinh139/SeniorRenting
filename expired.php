@@ -4928,12 +4928,34 @@ fclose($filemdata);
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>
 
+<style>
+
+.zoom {
+
+ height: 110px;
+  width: 110px;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.zoom:hover {
+width: 130px;
+  height: 130px;
+}
+    
+ 
+</style>
 <center><refer><h2>This website is made possible by:</h2></refer></center>
-<center><refer><p> Designing/developing <a href="https://linkwebs.linkst"> @nullflows</a></p>
-<p>plugin: AOS</p>
-<p>Mailing: PHPMailer</p>
-<p>UIGradient</p>
-<p>W3Schools</p>
+<div data-aos="zoom-in" >
+<a href="https://www.twitter.com/nullflows" target="_blank">
+<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+</a>
+
+<center><refer><p> Bob Dinh</p>
+<refer><p> Designing/developing</p>
+</div>
 </refer></center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>

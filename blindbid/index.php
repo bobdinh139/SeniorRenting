@@ -517,15 +517,34 @@ and you have to reply back if there is anything wrong.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</pp>
 <hr>
 
+<style>
+
+.zoom {
+
+ height: 110px;
+  width: 110px;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.zoom:hover {
+width: 130px;
+  height: 130px;
+}
+    
+ 
+</style>
 <center><refer><h2>This website is made possible by:</h2></refer></center>
-<center><refer><p> Designing/developing <a href="https://iwillpllugmyself/nullflows"> @nullflows</a></p>
-<p>plugin:  <a href="https://michalsnik.github.io/aos/">AOS</a></p>
-<p>Mailing:  <a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a></p>
-<p>Timer support for Safari: <a href="https://momentjs.com/"> momentjs</a></p>
-<p>Slide-Show: <a href="https://www.jssor.com/"> Jssor</a></p>
-<p>report button:  <a href="https://gradientbuttons.colorion.co/">gradientbuttons</a></p>
-<p>Background:  <a href="https://uigradients.com/#Terminal">UIGradient</a></p>
-<p>Some functions:  <a href="https://www.w3schools.com/">W3Schools</a></p>
+<div data-aos="zoom-in" >
+<a href="https://www.twitter.com/nullflows" target="_blank">
+<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+</a>
+
+<center><refer><p> Bob Dinh</p>
+<refer><p> Designing/developing</p>
+</div>
 </refer></center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>

@@ -127,6 +127,8 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
  </div>
 <br>
 <?php
+error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
 $apass = "123456789";
 $pass = $_POST["pass"];
 $nameadd = $_POST["usernameadd"];
@@ -179,7 +181,7 @@ echo "wrong password";
     }
 
 ?>
-
+<center>
 <info><h3>Add A Senior</h3></info>
 
 <form action="" method="post"><br>
@@ -194,14 +196,15 @@ Password:<br> <input type="password" name="pass" placeholder="password" ><br>
 
 <input type="submit" value="Add!">
 </form>
-
+</center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <hr>
 
 <?php
 
-
+error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
 $apass = "1234567890";
 $pass = $_POST["pass"];
 $nameremove = $_POST["usernameremove"];
@@ -234,6 +237,7 @@ echo "wrong password";
 
 
 ?>
+<center>
 <info><h3>Remove A Senior</h3></info>
 <form action="" method="post">
 Name to Remove:<br> <input type="text" name="usernameremove"placeholder="Name to remove" ><br>
@@ -251,4 +255,32 @@ Password: <br><input type="password" name="pass" placeholder="password"><br>
 
 </center>
 
+<style>
 
+.zoom {
+
+ height: 110px;
+  width: 110px;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.zoom:hover {
+width: 130px;
+  height: 130px;
+}
+    
+ 
+</style>
+<center><refer><h2>This website is made possible by:</h2></refer></center>
+<div data-aos="zoom-in" >
+<a href="https://www.twitter.com/nullflows" target="_blank">
+<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+</a>
+
+<center><refer><p> Bob Dinh</p>
+<refer><p> Designing/developing</p>
+</div>
+</refer></center>

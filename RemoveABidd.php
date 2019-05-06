@@ -129,7 +129,8 @@ background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://
 <br>
 <?php
 
-
+error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
 $apass = "01234567890";
 $pass = $_POST["pass"];
 $bidremove = $_POST["bidremove"];
@@ -297,7 +298,7 @@ echo "wrong password";
     
 ?>
 
-
+<center>
 <info><h3>Remove A Bid</h3></info>
 <form action="" method="post">
 
@@ -349,4 +350,34 @@ Password: <br><input type="password" name="pass" placeholder="password"><br>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 </center>
+
+<style>
+
+.zoom {
+
+ height: 110px;
+  width: 110px;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.zoom:hover {
+width: 130px;
+  height: 130px;
+}
+    
+ 
+</style>
+<center><refer><h2>This website is made possible by:</h2></refer></center>
+<div data-aos="zoom-in" >
+<a href="https://www.twitter.com/nullflows" target="_blank">
+<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+</a>
+
+<center><refer><p> Bob Dinh</p>
+<refer><p> Designing/developing</p>
+</div>
+</refer></center>
 

@@ -331,7 +331,35 @@ fclose($filefdata);
   <a href = "index.php" class="gradient-button gradient-button-1">Go Back</a><br /></center>
 
     </center>
+<style>
 
+.zoom {
+
+ height: 110px;
+  width: 110px;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.zoom:hover {
+width: 130px;
+  height: 130px;
+}
+    
+ 
+</style>
+<center><refer><h2>This website is made possible by:</h2></refer></center>
+<div data-aos="zoom-in" >
+<a href="https://www.twitter.com/nullflows" target="_blank">
+<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+</a>
+
+<center><refer><p> Bob Dinh</p>
+<refer><p> Designing/developing</p>
+</div>
+</refer></center>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
 
