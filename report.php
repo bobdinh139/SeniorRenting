@@ -22,8 +22,54 @@
 
 <style>
 #grad {
-background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://uigradients.com */
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(45deg,   #ffa17f, #00223e, #203a43, #2c5364);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 50s ease infinite;
+	-moz-animation: Gradient 50s ease infinite;
+	animation: Gradient 50s ease infinite;
+
+
 }
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
 </style>
 <div  data-aos-duration="2000" data-aos="fade-down">
 

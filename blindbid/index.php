@@ -28,11 +28,53 @@
 
 <style>
 #grad {
-background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(45deg,  #44a08d, #093637, #203a43, #2c5364);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 50s ease infinite;
+	-moz-animation: Gradient 50s ease infinite;
+	animation: Gradient 50s ease infinite;
+
 
 }
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 
 </style>
 <div  data-aos-duration="2000" data-aos="fade-down">
@@ -382,12 +424,7 @@ fclose($filenameend);
     $message = $mess.", check your email to verify ";
     echo "<script type='text/javascript'>alert('$message');</script>";
             
-
-
-
 }
-
-
 
 fclose($filewbid);
 } 
@@ -398,13 +435,8 @@ fclose($filewbid);
         echo "<script type='text/javascript'>alert('$mathErr');</script>"; 
     }
 }
-
-
     
 }
-
-
-
 
 // remove all the space, weird characters of the bid
 function removeund($data) {

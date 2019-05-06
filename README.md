@@ -10,21 +10,23 @@ Here are some reasons why it is better than google form:
 
 + Updates in real-time
 
-+ Show bidding history, but no names revealed (only bidder's email and senior's code name)
++ Show bidding history in real-time bidding, but no names revealed (only bidder's email and senior's code name)
 
 + User can see how much time they have left until the bid expires
 
-+ User can see who wins which senior
++ User can see who wins which senior (real-time bidding)
 
 + User will receive an email confirmation 
 
-+ User can report bidder(s)
++ User can report bidder(s) (real-time bidding)
 
 + Add/Remove seniors easily through website during the registration process
 
 + Provided with admin tool to remove bid(s) with ease if the bid(s) is/are not legit 
 
 + The website can be modified to fit with different purposes (exp: from real-time bidding to blind bidding)
+
++ Beautiful UI
 
 + User can request features, create PR(s) and report issues
 

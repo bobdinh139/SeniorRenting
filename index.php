@@ -25,9 +25,12 @@
 
 <body  id="grad">
 
+
 <style>
 #grad {
-background: linear-gradient(to bottom, #99f2c8, #1f4037); /* thanks to: https://uigradients.com */
+
+	color: #fff;
+	background: linear-gradient(45deg,#136a8a, #267871, #203a43, #2c5364);
 
 }
 
