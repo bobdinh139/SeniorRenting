@@ -491,6 +491,8 @@ fclose($filefdata);
   <center><info> <h3>Price for each person</h3></info></center>
 
 <center><h4>Minimum price (in dollar)</h4></center>
+         <script src="js/javascript.js"></script>
+
 <center><p style="color:red" id="uptimer"></p></center>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
