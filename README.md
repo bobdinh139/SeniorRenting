@@ -58,7 +58,7 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 ## TO-DO
 
-+ Fix the the price counting algorithm in blind-bidding
++ ~~Fix the the price counting algorithm in blind-bidding~~
 
 + Test in wider range
 

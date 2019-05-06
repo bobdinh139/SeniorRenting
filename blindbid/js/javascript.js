@@ -12,9 +12,9 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-//jssor.
 
-        jssor_1_slider_init = function() {
+//jssor
+       jssor_1_slider_init = function() {
 
             var jssor_1_SlideshowTransitions = [
               {$Duration:800,$Opacity:2}
@@ -4667,6 +4667,33 @@ for (i = 0; i < coll.length; i++) {
     return hooks;
 
 })));
+
+var countUpDate = moment("2019-05-2 00:00", "YYYY-MM-DD HH:mm");
+
+
+var y = setInterval(function() {
+
+  var now = moment();
+    
+  var distance = now - countUpDate;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("uptimer").innerHTML = "$"+ days;
+        var price = days;
+       var pricetophp = price;
+        $(document).ready(function() {
+                $.ajax({
+                    url: 'setprice.php',
+                    type: 'GET',
+                    data: { PHPdata: pricetophp }
+  });
+        });
+
+}, 1000);
+
 
 var countDownDate = moment("2021-04-28 24:00", "YYYY-MM-DD HH:mm");
 

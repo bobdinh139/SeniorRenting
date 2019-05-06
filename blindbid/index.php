@@ -491,51 +491,9 @@ fclose($filefdata);
   <center><info> <h3>Price for each person</h3></info></center>
 
 <center><h4>Minimum price (in dollar)</h4></center>
-<center><p style="color:red" id="priceovert"></p></center>
+<center><p style="color:red" id="uptimer"></p></center>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<?php
-//read the current price
-$str3="information/priceovert.txt";
-$pricefile = fopen($str3, "r") or die("Unable to open file!");     
-  $tocheckbd = (int)fgets($pricefile);
-   echo  "<script>document.getElementById('priceovert').innerHTML =$tocheckbd</script>";
-         fclose($pricefile);
-?>
-<script>
-// cache the price, increase the price by 1 everyday 
-   var $pricee = $('#priceovert');
-    localStorage.price = <?php echo $tocheckbd;?>;
-   setInterval(function () {
-        var price = parseInt($pricee.html());
-        if (typeof(Storage) !== "undefined") {
-        if (localStorage.price) {
-       
-         localStorage.price = Number(localStorage.price)+1;
-         } else {
-         localStorage.price = <?php echo $tocheckbd;?>;
-         }
-        $pricee.html("$"+localStorage.price);
-        }
-        
-               var pricetophp = localStorage.price;
-        $(document).ready(function() {
-                $.ajax({
-                    url: 'setprice.php',
-                    type: 'GET',
-                    data: { PHPdata: pricetophp },
-                    success: function(data) {
-                        $('#priceovert').html(data);
-                    },
-                    error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    
-        }
-  });
-        });
-        
-   }, 100000000);
 
- 
-</script>
 
 </section>
 
