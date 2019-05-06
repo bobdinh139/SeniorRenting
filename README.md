@@ -6,6 +6,8 @@ Here are some reasons why it is better than google form:
 
 ## Benefits/Features
 
++ Support blind-bidding
+
 + Updates in real-time
 
 + Show bidding history, but no names revealed (only bidder's email and senior's code name)
@@ -34,15 +36,17 @@ Here are some reasons why it is better than google form:
 
 SET-UP
 
-1. Go to ```/allsenoirname.php``` and add/remove seniors (default password is ```123456789```  and ```1234567890``` for for adding senior(s) and removing senior(s)).
+1. Decide whether you want to use real-time bidding or blind-bidding, if you use blind bidding, copy all the files from ```/blindbid/``` to root
 
-2. Add bad words to the list at ```index.php``` and ```report.php``` (prevent user from entering bad words). 
+2. Go to ```/addsenoirname.php``` and add/remove seniors (default password is ```123456789```  and ```1234567890``` for for adding senior(s) and removing senior(s)).
 
-3. Add images for the slide-show at ```/image/``` (width: 980px; height: 380px)
+3. Add bad words to the list at ```index.php``` and ```report.php``` (prevent user from entering bad words). 
 
-3. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
+4. Add images for the slide-show at ```/image/``` (width: 980px; height: 380px)
 
-4. If the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
+5. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en)
+
+6. If the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
 
 ## Drawback(s)?
 
@@ -70,7 +74,7 @@ use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function
 
 ## NOTES
 
-Passwords in ```allsenoirname.php ``` and ``` RemoveABidd.php ``` are not encrypted for the sake of simplicity.
+Passwords in ```addsenoirname.php ``` and ``` RemoveABidd.php ``` are not encrypted for the sake of simplicity.
 
 Verification link is _NOT_ gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
 and you have to reply back if there is anything wrong.
@@ -97,7 +101,9 @@ You should refresh the website frequently to check for any new bids/updates as i
 
 #### Demo 
 
-[here](https://rentingseniorbynull.000webhostapp.com/)
+real-time bidding [here](https://rentingseniorbynull.000webhostapp.com/)
+
+blind-bidding [here](https://seniorrentingblind.000webhostapp.com)
 
 #### License
 
