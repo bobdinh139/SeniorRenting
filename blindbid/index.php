@@ -283,10 +283,13 @@ $str3="information/"."p".$_POST["seniorname"].".txt";
 $pricefile = fopen($str3, "r") or die("Unable to open file!");     
   $tocheckbd = (int)fgets($pricefile);
          fclose($pricefile);
+//get the minimum price tag
+$str31="information/priceovert.txt";
+$pricefile = fopen($str31, "r") or die("Unable to open file!");     
+  $tocheckpro = (int)fgets($pricefile);
 
-
-  if ($str4 <= $tocheckbd ){
-       $AErr = "Your bid must be higher than the lastest bid";
+  if ($str4 <= $tocheckbd || $str4 <= $tocheckpro ){
+       $AErr = "Your bid must be higher than the lastest bid, and it must be higher than minimum price";
              echo "<script type='text/javascript'>alert('$AErr');</script>";
       $checc = -1;  
   }
