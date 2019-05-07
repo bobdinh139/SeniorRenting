@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/bobdinh139/SeniorRenting.svg?branch=master)](https://travis-ci.com/bobdinh139/SeniorRenting)
+
 ## Description 
 
 Little project to make senior bidding activity better!
