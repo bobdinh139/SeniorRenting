@@ -33,9 +33,9 @@
 	color: #fff;
 	background: linear-gradient(45deg,  #44a08d, #093637, #203a43, #2c5364);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 50s ease infinite;
-	-moz-animation: Gradient 50s ease infinite;
-	animation: Gradient 50s ease infinite;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
 
 
 }
@@ -523,7 +523,7 @@ fclose($filefdata);
   <center><info> <h3>Price for each person</h3></info></center>
 
 <center><h4>Minimum price (in dollar)</h4></center>
-         <script src="js/javascript.js"></script>
+         <script src="js/js.js"></script>
 
 <center><p style="color:red" id="uptimer"></p></center>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

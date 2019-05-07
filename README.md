@@ -50,30 +50,6 @@ SET-UP
 
 6. If the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
 
-## Drawback(s)?
-
-+ ~~User can fake emails~~
-**fix:**
-use ~~mail()~~ PHPMailer [here](https://github.com/PHPMailer/PHPMailer) function to verify bidding process. 
-
-+ Still needs a moderator
-
-## TO-DO
-
-- [x] Fix the the price counting algorithm in blind-bidding
-
-- [ ] Test in wider range
-
-- [x] countdown timer
-
-- [x] Change secret names to actual name when sending an email
-
-- [x] Use file to list all names
-
-- [x] Create Admin tools(?)
-
-- [x] Add more images at the top of the website (w/ images of west students shuffle through)
-
 ## NOTES
 
 Passwords in ```addsenoirname.php ``` and ``` RemoveABidd.php ``` are not encrypted for the sake of simplicity.
@@ -86,27 +62,11 @@ raised over time. This does not neccessary mean it is the price of that senior; 
 
 You should refresh the website frequently to check for any new bids/updates as it is written in php 
 
-## This website is brought to you by
-
-+ Designing/Developing: [@nullflows](https://github.com/nullflows)
-
-+ Animation: [AOS](https://michalsnik.github.io/aos/) 
-
-+ Mailing: [PHPMailer](https://github.com/PHPMailer/PHPMailer) 
-
-+ Timer support for Safari: [momentjs](https://momentjs.com/)
-
-+ Gradient-button: [gradienbuttons](https://gradientbuttons.colorion.co/)
-
-+ Background: [UIGradients](https://uigradients.com/#Terminal)
-
-+ Slide-show: [Jssor](https://www.jssor.com/)
-
-+ Some functions: [W3schools](https://www.w3schools.com/)
+Read more about the project (to-do list, etc) at wiki [here](https://github.com/bobdinh139/SeniorRenting/wiki)
 
 #### Demo 
 
-real-time bidding [here](https://rentingseniorbynull.000webhostapp.com/)
+real-time bidding [here](https://seniorrealtimebid.000webhostapp.com/)
 
 blind-bidding [here](https://seniorrentingblind.000webhostapp.com)
 

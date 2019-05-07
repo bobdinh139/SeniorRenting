@@ -27,9 +27,9 @@
 	color: #fff;
 	background: linear-gradient(45deg,   #ffa17f, #00223e, #203a43, #2c5364);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 50s ease infinite;
-	-moz-animation: Gradient 50s ease infinite;
-	animation: Gradient 50s ease infinite;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
 
 
 }
