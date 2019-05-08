@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/bobdinh139/SeniorRenting.svg?branch=master)](https://travis-ci.com/bobdinh139/SeniorRenting)
 
 ## Description 
 
