@@ -35,7 +35,7 @@
 }
 
 </style>
-<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org';" id="report" title="Report" style="display: block;"> Report </button>
+<button  onClick="gotop(500)" id="report" title="top" style="display: block;">Top </button>
 
 <section id ="Slide">
 <div  data-aos-duration="2000" data-aos="fade-down">
@@ -644,10 +644,11 @@ width: 130px;
 </style>
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <div data-aos="zoom-in" >
+<center>
 <a href="https://www.twitter.com/nullflows" target="_blank">
-<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+<img src="image/ok.png"  width="110" height="110" class="zoom">
 </a>
-
+</center>
 <center><refer><p> Bob Dinh</p>
 <refer><p> Designing/developing</p>
 </div>
@@ -662,14 +663,13 @@ width: 130px;
 
 <div id="navbar" style="top: 0px;">
 <center>
-      <a href="#Slide">Top</a>
            <a href="#amount">Bid</a>
 
      <a href="#qaa">Details about Bids</a>
       <a href="#pfep">Price</a>
         <a href="#aboutt">About</a>
 
-  <a href="mailto:duongdaidinh@dogrschools.org">Report Issues</a>
+  <a href="mailto:duongdaidinh@dogrschools.org?subject=Bug report">Report Issues</a>
 
 
 

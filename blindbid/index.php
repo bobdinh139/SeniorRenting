@@ -77,7 +77,7 @@
 
 
 </style>
-<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org';" id="report" title="Report" style="display: block;"> Report </button>
+<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org?subject=Bug report';" id="report" title="Report" style="display: block;"> Report an issue </button>
 
 <div  data-aos-duration="2000" data-aos="fade-down">
     <!-- #region Jssor Slider Begin -->
@@ -542,7 +542,7 @@ fclose($filefdata);
 <hr>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <refer><h2>About</h2>
-<p style="color:	#F0F8FF" >This is blind-bidding; this means you will not know what the price for each senior is. The minimum price will be raised over time; this does not neccessary mean it is the current price (maybe higher, lower)</p>
+<b><p style="color:	#F0F8FF" >This is blind-bidding; this means you will not know what the price for each senior is. The minimum price will be raised over time; this does not neccessary mean it is the current price (maybe higher, lower)</p></b>b
 <p>Verification link is <b><i>NOT</i></b> gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
 and you have to reply back if there is anything wrong.</p>
 <p>User can see who wins which senior and seniors' secret names after senior renting ends</p>
@@ -572,14 +572,15 @@ width: 130px;
 </style>
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <div data-aos="zoom-in" >
+<center>
 <a href="https://www.twitter.com/nullflows" target="_blank">
-<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+<img src="image/ok.png"  width="110" height="110" class="zoom">
 </a>
-
+</center>
 <center><refer><p> Bob Dinh</p>
 <refer><p> Designing/developing</p>
 </div>
-</refer></center>
+</refer></centercenter>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>
 <refer>

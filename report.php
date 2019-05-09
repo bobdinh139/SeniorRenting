@@ -19,6 +19,7 @@
 </head>
 
 <body  id="grad">
+<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org?subject=Bug report';" id="report" title="Report" style="display: block;"> Report an issue </button>
 
 <style>
 #grad {
@@ -398,14 +399,15 @@ width: 130px;
 </style>
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <div data-aos="zoom-in" >
+<center>
 <a href="https://www.twitter.com/nullflows" target="_blank">
-<center><img src="image/ok.png"  width="110" height="110" class="zoom"></center>
+<img src="image/ok.png"  width="110" height="110" class="zoom">
 </a>
-
+</center>
 <center><refer><p> Bob Dinh</p>
 <refer><p> Designing/developing</p>
 </div>
-</refer></center>
+</refer></centercenter>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
 
