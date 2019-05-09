@@ -35,6 +35,9 @@
 }
 
 </style>
+<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org';" id="report" title="Report" style="display: block;"> Report </button>
+
+<section id ="Slide">
 <div  data-aos-duration="2000" data-aos="fade-down">
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
@@ -140,6 +143,7 @@
     <!-- #endregion Jssor Slider End -->
  </div>
  </div>
+ </section>
 <center><h1>Renting Seniors</h1></center>
 
 <center><info><p style="color:red" id="timer"></p></info></center>
@@ -605,6 +609,8 @@ fclose($filemdata);
 <center> 
 <hr>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<section id = "aboutt">
+
 <refer><h2>About</h2>
 <p> Seniors’ secret names are used for anonymity purposes</p>
 <p>You should refresh the website frequently to check for any new bids/updates as it is written in php </p>
@@ -613,7 +619,8 @@ and you have to reply back if there is anything wrong.</p>
 <p>User can see who wins which senior and seniors' secret names after senior renting ends</p>
 <p>User can request features, create PR(s), report issues and view source-code  <a href="https://github.com/bobdinh139/SeniorRenting"> here</a></p>
 </center>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;</pp>
+</section>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <hr>
 
 <style>
@@ -652,6 +659,23 @@ width: 130px;
 <center>@bobdinh139</center>
 </cre>
 </refer>
+
+<div id="navbar" style="top: 0px;">
+<center>
+      <a href="#Slide">Top</a>
+           <a href="#amount">Bid</a>
+
+     <a href="#qaa">Details about Bids</a>
+      <a href="#pfep">Price</a>
+        <a href="#aboutt">About</a>
+
+  <a href="mailto:duongdaidinh@dogrschools.org">Report Issues</a>
+
+
+
+</center>
+</div>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
 

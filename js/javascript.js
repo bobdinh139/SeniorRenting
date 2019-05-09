@@ -1,3 +1,30 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("report").style.display = "block";
+    document.getElementById("navbar").style.top = "0";
+     
+  } else {
+           document.getElementById("report").style.display = "none";
+    document.getElementById("navbar").style.top = "-70px";
+ 
+
+  }
+ 
+}
+
+$("#navbar a[href^='#']").on('click', function(e) {
+   e.preventDefault();
+   var hash = this.hash;
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 300, function(){
+       window.location.hash = hash;
+     });
+});
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

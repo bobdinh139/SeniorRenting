@@ -55,7 +55,7 @@ GNU Lesser General Public License v2.1
 
 + Beautiful UI
 
-+ User can request features, create PR(s) and report issues
++ User can request features, create PR(s) and report issues here and on the website
 
 + Fully Open-source
 

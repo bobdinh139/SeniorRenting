@@ -77,6 +77,8 @@
 
 
 </style>
+<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org';" id="report" title="Report" style="display: block;"> Report </button>
+
 <div  data-aos-duration="2000" data-aos="fade-down">
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
