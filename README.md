@@ -21,11 +21,16 @@ raised over time. This does not neccessary mean it is the price of that senior; 
 
 You should refresh the website frequently to check for any new bids/updates as it is written in php 
 
-#### Demo 
+## Demo 
 
 real-time bidding [here](https://seniorrealtimebid.000webhostapp.com/)
 
+![1](https://github.com/bobdinh139/HostImage/blob/master/1.gif?raw=true)
+
 blind-bidding [here](https://seniorrentingblind.000webhostapp.com)
+
+![2](https://github.com/bobdinh139/HostImage/blob/master/2.gif?raw=true)
+
 
 #### License
 
