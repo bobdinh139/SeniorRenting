@@ -1,13 +1,14 @@
+<img src="image/wcnr.png?raw=true" align="right" width="300">
 
 ## Description 
 
 Little project to make senior bidding activity better!
 
-[Here](#Features) are some reasons why it is better than google form
+[Here](#Features) are some reasons why it is better than google form (traditional way).
 
-Set-up guide [here](#How-to)
+[Set-up guide](#How-to)
 
-Read more about the project (to-do list, etc) at wiki [here](https://github.com/bobdinh139/SeniorRenting/wiki)
+Read more about the project (to-do list, changelog, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
 
 ## NOTES
 
@@ -17,24 +18,26 @@ Verification link is _NOT_ gonna be developed, and it was removed from to-do lis
 and you have to reply back if there is anything wrong.
 
 In the blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for every senior will be
-raised over time. This does not neccessary mean it is the price of that senior; the actual price can be higher/lower. 
+raised over time. This does not neccessary mean it is the current price of that senior; the actual price can be higher/lower. 
 
-You should refresh the website frequently to check for any new bids/updates as it is written in php 
+You should refresh the website frequently to check for any new bids/updates as it is written in php.
 
 ## Demo 
 
-real-time bidding [here](https://seniorrealtimebid.000webhostapp.com/)
+> Click the link to go to the website
+
+[real-time bidding](https://seniorrealtimebid.000webhostapp.com/)
 
 ![1](https://github.com/bobdinh139/HostImage/blob/master/1.gif?raw=true)
 
-blind-bidding [here](https://seniorrentingblind.000webhostapp.com)
+[blind-bidding](https://seniorrentingblind.000webhostapp.com)
 
 ![2](https://github.com/bobdinh139/HostImage/blob/master/2.gif?raw=true)
 
 
 #### License
 
-GNU Lesser General Public License v2.1
+[GNU Lesser General Public License v2.1](LICENSE)
 
 ## Features
 
@@ -70,7 +73,7 @@ GNU Lesser General Public License v2.1
 
 SET-UP
 
-1. Decide whether you want to use real-time bidding or blind-bidding, if you use blind bidding, copy all the files from ```/blindbid/``` to root
+1. Decide whether you want to use real-time bidding or blind-bidding, if you use blind bidding, copy all the files from ```/blindbid/``` and paste all of them to root
 
 2. Go to ```/addsenoirname.php``` and add/remove seniors (default password is ```123456789```  and ```1234567890``` for for adding senior(s) and removing senior(s)).
 
@@ -78,7 +81,7 @@ SET-UP
 
 4. Add images for the slide-show at ```/image/``` (width: 980px; height: 380px)
 
-5. Add your email + password to send email and enable less secure apps in Gmail [here](https://support.google.com/accounts/answer/6010255?hl=en) in order to setup PHPMailer
+5. Add your email + password in PHPMailer in ```index.php``` and ```report.php``` to send email, and enable [less secure apps in Gmail](https://support.google.com/accounts/answer/6010255?hl=en) in order to setup PHPMailer
 
 6. If the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
 
