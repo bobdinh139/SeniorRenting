@@ -28,12 +28,23 @@ You should refresh the website frequently to check for any new bids/updates as i
 
 [real-time bidding](https://seniorrealtimebid.000webhostapp.com/)
 
+Desktop view:
+
 ![1](https://github.com/bobdinh139/HostImage/blob/master/1.gif?raw=true)
+
+mobile view: (iPhone 5s/SE)
+
+![3](https://github.com/bobdinh139/HostImage/blob/master/3.gif?raw=true)
 
 [blind-bidding](https://seniorrentingblind.000webhostapp.com)
 
+Desktop view:
+
 ![2](https://github.com/bobdinh139/HostImage/blob/master/2.gif?raw=true)
 
+mobile view: (iPhone 5s/SE)
+
+![4](https://github.com/bobdinh139/HostImage/blob/master/4.gif?raw=true)
 
 #### License
 
