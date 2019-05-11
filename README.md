@@ -63,6 +63,10 @@ You should refresh the website frequently to check for any new bids/updates as i
 
 + Beautiful UI
 
++ No browser left behind
+
++ Your privacy matters
+
 + User can request features, create PR(s) and report issues here and on the website
 
 + Fully Open-source
