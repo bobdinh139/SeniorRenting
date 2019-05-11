@@ -26,7 +26,7 @@ You should refresh the website frequently to check for any new bids/updates as i
 
 > Click the link to go to the website
 
-[real-time bidding](https://seniorrealtimebid.000webhostapp.com/)
+### [real-time bidding](https://seniorrealtimebid.000webhostapp.com/)
 
 Desktop view:
 
@@ -36,7 +36,9 @@ mobile view: (iPhone 5s/SE)
 
 ![3](https://github.com/bobdinh139/HostImage/blob/master/3.gif?raw=true)
 
-[blind-bidding](https://seniorrentingblind.000webhostapp.com)
+<hr>
+
+### [blind-bidding](https://seniorrentingblind.000webhostapp.com)
 
 Desktop view:
 
