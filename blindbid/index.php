@@ -31,8 +31,8 @@
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(45deg,  #44a08d, #093637, #203a43, #2c5364);
-	background-size: 500% 500%;
+	background: linear-gradient(45deg,  #44a08d, #093637,  #f7797d, #c6ffdd);
+	background-size: 1000% 1000%;
 	-webkit-animation: Gradient 30s ease infinite;
 	-moz-animation: Gradient 30s ease infinite;
 	animation: Gradient 30s ease infinite;
@@ -186,7 +186,7 @@
  </div>
 <center><h1>Renting Seniors</h1></center>
 
-<center><info><p style="color:red" id="timer"></p></info></center>
+<center><info><b><p style="color:red;  text-shadow: 1px 1px #000000;" id="timer"></p></b></info></center>
 
 <center><info>
 <i>
@@ -527,7 +527,7 @@ fclose($filefdata);
 <center><h4>Minimum price (in dollar)</h4></center>
          <script src="js/js.js"></script>
 
-<center><p style="color:red" id="uptimer"></p></center>
+<center><b><p style="color:red;  text-shadow: 1px 1px #000000;" id="uptimer"></p></b></center>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
 
