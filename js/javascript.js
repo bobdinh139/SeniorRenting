@@ -62,6 +62,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+// thanks to stackoverflow.com/users/3771196/robbendebiene
 function gotop(scrollDuration) {
     var cosParameter = window.scrollY / 2,
         scrollCount = 0,
