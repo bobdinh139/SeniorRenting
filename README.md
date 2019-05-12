@@ -20,8 +20,6 @@ and you have to reply back if there is anything wrong.
 In the blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for every senior will be
 raised over time. This does not neccessary mean it is the current price of that senior; the actual price can be higher/lower. 
 
-You should refresh the website frequently to check for any new bids/updates as it is written in php.
-
 ## Demo 
 
 > Click the link to go to the website
