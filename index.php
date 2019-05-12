@@ -503,9 +503,9 @@ var auto_refresh = setInterval(
    <center><info><h3>Details about lastest bids</h3></info></center>
 
 <button class="collapsible" data-aos="fade-right"></button>
-<div id="lol" class="content">
+<div class="content">
 <center><h4>Recent Bid + amount</h4></center>
-
+<div id ="lol"></div>
 
 </div>
 </section>
@@ -522,9 +522,9 @@ var auto_refresh = setInterval(
   <center><info> <h3>Price for each person</h3></info></center>
 
 <button class="collapsible" data-aos="fade-right"></button>
-<div id ="lol2" class="content">
+<div class="content">
 <center><h4>Price for each person</h4></center>
-
+<div id ="lol2"></div>
 
 </div>
 </section>
