@@ -8,7 +8,7 @@ Little project to make senior bidding activity better!
 
 [Set-up guide](#How-to)
 
-Read more about the project (to-do list, changelog, **_future projects_**, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
+More (to-do, changelog, [**_future project_:heart_eyes: **](https://github.com/bobdinh139/PROMposal), etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
 
 [Browser Compatibility](#Browser-Compatibility)
 
