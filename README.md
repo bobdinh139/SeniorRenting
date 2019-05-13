@@ -10,6 +10,8 @@ Little project to make senior bidding activity better!
 
 Read more about the project (to-do list, changelog, **_future projects_**, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
 
+[Browser Compatibility](#Browser-Compatibility)
+
 ## NOTES
 
 Passwords in ```addsenoirname.php ``` and ``` RemoveABidd.php ``` are not encrypted for the sake of simplicity.
@@ -107,7 +109,7 @@ SET-UP
 | Chrome        | IE: 11         | older Safari |
 | Safari        | Safari: 5.1    | older browser|
 | FireFox       |                | Opera        |
-| Browser 7.1   |                | UC browswe   |
+| Browser 7.1   |                | UC browser   |
 | Edge          |                |              |
    
 
