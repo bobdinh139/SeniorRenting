@@ -1,3 +1,24 @@
+if($(window).width()<=600){
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("report").style.display = "block";
+  } else {
+  document.getElementById("report").style.display = "none";
+  }
+
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+}
+else {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -12,6 +33,7 @@ function scrollFunction() {
 
   }
  
+}
 }
 
 $("#navbar a[href^='#']").on('click', function(e) {
@@ -40,8 +62,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-//thanks to stackoverflow.com/users/3771196/robbendebiene
-
+// thanks to stackoverflow.com/users/3771196/robbendebiene
 function gotop(scrollDuration) {
     var cosParameter = window.scrollY / 2,
         scrollCount = 0,
@@ -56,8 +77,6 @@ function gotop(scrollDuration) {
     }
     window.requestAnimationFrame(step);
 }
-
-
 //jssor
        jssor_1_slider_init = function() {
 
@@ -4712,32 +4731,6 @@ function gotop(scrollDuration) {
     return hooks;
 
 })));
-
-var countUpDate = moment("2019-05-2 00:00", "YYYY-MM-DD HH:mm");
-
-
-var y = setInterval(function() {
-
-  var now = moment();
-    
-  var distance = now - countUpDate;
-    
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("uptimer").innerHTML = "$"+ days;
-        var price = days;
-       var pricetophp = price;
-        $(document).ready(function() {
-                $.ajax({
-                    url: 'setprice.php',
-                    type: 'GET',
-                    data: { PHPdata: pricetophp }
-  });
-        });
-
-}, 1000);
 
 
 var countDownDate = moment("2021-04-28 24:00", "YYYY-MM-DD HH:mm");

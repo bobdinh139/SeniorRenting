@@ -36,7 +36,8 @@
 
 </style>
 <button  onClick="gotop(500)" id="report" title="top" style="display: block;">Top </button>
-
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
 <section id ="Slide">
 <div  data-aos-duration="2000" data-aos="fade-down">
     <!-- #region Jssor Slider Begin -->
@@ -556,7 +557,7 @@ fclose($filemdata);
 ?>
 </div>
 </section>
-<hr>
+<hr data-aos="zoom-in">
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
    <center><info><h3>Report Bidder</h3></info></center>
 
@@ -607,7 +608,7 @@ fclose($filemdata);
 <p></p>
 
 <center> 
-<hr>
+<hr data-aos="zoom-in">
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <section id = "aboutt">
 
@@ -621,7 +622,7 @@ and you have to reply back if there is anything wrong.</p>
 </center>
 </section>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<hr>
+<hr data-aos="zoom-in">
 
 <style>
 
@@ -654,7 +655,7 @@ width: 130px;
 </div>
 </refer></center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<hr>
+<hr data-aos="zoom-in">
 <refer>
 <cre>
 <center>@bobdinh139</center>
@@ -682,7 +683,6 @@ width: 130px;
 
 <script src ='js/javascript.js'></script>
 
-<!–– thanks to https://michalsnik.github.io/aos/  ––>
 <script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'></script>
 	  <script>AOS.init({
   duration: 1200,
