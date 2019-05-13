@@ -8,7 +8,7 @@ Little project to make senior bidding activity better!
 
 [Set-up guide](#How-to)
 
-Read more about the project (to-do list, changelog, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
+Read more about the project (to-do list, changelog, **_future projects_**, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
 
 ## NOTES
 
@@ -46,7 +46,7 @@ mobile view: (iPhone 5s/SE)
 
 ![4](https://github.com/bobdinh139/HostImage/blob/master/4.gif?raw=true)
 
-#### License
+### License
 
 [GNU Lesser General Public License v2.1](LICENSE)
 
@@ -54,7 +54,7 @@ mobile view: (iPhone 5s/SE)
 
 + Support blind-bidding
 
-+ Updates in real-time
++ Updates in real-time (every 1 second)
 
 + Show bidding history in real-time bidding, but no names revealed (only bidder's email and senior's code name)
 
@@ -72,13 +72,13 @@ mobile view: (iPhone 5s/SE)
 
 + The website can be modified to fit with different purposes (exp: from real-time bidding to blind bidding)
 
-+ Beautiful UI
++ Beautiful, responsive UI
 
-+ No browser left behind
++ No browser, device left behind
 
-+ Your privacy matters
++ Your privacy matters; we don't collect data, use cookies, share information and use ads
 
-+ User can request features, create PR(s) and report issues here and on the website
++ User can request features, create PR(s) and report issues about this project/future project here and on the website
 
 + Fully Open-source
 
@@ -99,4 +99,23 @@ SET-UP
 5. Add your email + password in PHPMailer in ```index.php``` and ```report.php``` to send email, and enable [less secure apps in Gmail](https://support.google.com/accounts/answer/6010255?hl=en) in order to setup PHPMailer
 
 6. If the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
+
+## Browser Compatibility
+
+| Compatible    | Non-compatible | Not tested   |
+| ------------- |:--------------:| ------------:|
+| Chrome        | IE: 11         | older Safari |
+| Safari        | Safari: 5.1    | older browser|
+| FireFox       |                | Opera        |
+| Browser 7.1   |                | UC browswe   |
+| Edge          |                |              |
+   
+
+_Compatible: on newer version of browsers_
+
+_Non-compatible: older version of browsers and Internet Explorer_
+
+_Not tested: basically all browsers not in non-compatible/compatible lists and older browsers' versions_
+
+**You can help by testing on an Android since I don't use Android**
 
