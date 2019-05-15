@@ -6,11 +6,9 @@ Little project to make senior bidding activity better!
 
 [Here](#Features) are some reasons why it is better than google form (traditional way).
 
-[Set-up guide](#How-to)
+[Set-up guide](#How-to) || Want to contribute? :point_right: [Contribution guidelines](https://github.com/bobdinh139/SeniorRenting/blob/master/CONTRIBUTING.md)
 
 More (to-do, changelog, [**_future project_**](https://github.com/bobdinh139/PROMposal):heart_eyes:, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
-
-[Browser Compatibility](#Browser-Compatibility)
 
 ## NOTES
 
@@ -101,23 +99,4 @@ SET-UP
 5. Add your email + password in PHPMailer in ```index.php``` and ```report.php``` to send email, and enable [less secure apps in Gmail](https://support.google.com/accounts/answer/6010255?hl=en) in order to setup PHPMailer
 
 6. If the bid(s) is/are not legit, go to ``` /RemoveABidd.php ``` to remove lastest bid (default password is ```01234567890``` ) 
-
-## Browser Compatibility
-
-| Compatible    | Non-compatible | Not tested   |
-| ------------- |:--------------:| ------------:|
-| Chrome        | IE: 11         | older Safari |
-| Safari        | Safari: 5.1    | older browser|
-| FireFox       |                | Opera        |
-| Browser 7.1   |                | UC browser   |
-| Edge          |                |              |
-   
-
-_Compatible: on newer version of browsers_
-
-_Non-compatible: older version of browsers and Internet Explorer_
-
-_Not tested: basically all browsers not in non-compatible/compatible lists and older browsers' versions_
-
-**You can help by testing on an Android since I don't use Android**
 
