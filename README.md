@@ -6,9 +6,9 @@ Little project to make senior bidding activity better!
 
 [Here](#Features) are some reasons why it is better than google form (traditional way).
 
-[Set-up guide](#How-to) || Want to contribute? :point_right: [Contribution guidelines](https://github.com/bobdinh139/SeniorRenting/blob/master/CONTRIBUTING.md)
+[Set-up guide](#How-to); Want to contribute? :point_right: [Contribution guidelines](https://github.com/bobdinh139/SeniorRenting/blob/master/CONTRIBUTING.md)
 
-More (to-do, changelog, [**_future project_**](https://github.com/bobdinh139/PROMposal):heart_eyes:, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
+More (to-do, changelog, [**_future project_**](https://github.com/bobdinh139/PROMposal) :heart_eyes: , etc) at [WIKI](https://github.com/bobdinh139/SeniorRenting/wiki).
 
 ## NOTES
 

@@ -616,7 +616,7 @@ width: 130px;
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <div data-aos="zoom-in" >
 <center>
-<a href="https://www.twitter.com/nullflows" target="_blank">
+<a href="https://www.github.com/null0verflow" target="_blank">
 <img src="image/ok.png"  width="110" height="110" class="zoom">
 </a>
 </center>
@@ -640,7 +640,8 @@ width: 130px;
       <a href="#pfep">Price</a>
         <a href="#aboutt">About</a>
 
-  <a href="mailto:duongdaidinh@dogrschools.org?subject=Bug report">Report Issues</a>
+<!–– your email here ––>
+  <a href="mailto:youremail@email.here?subject=Bug report">Report Issues</a>
 
 
 
