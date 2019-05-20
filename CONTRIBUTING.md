@@ -1,3 +1,3 @@
-for indirect contribution: follow the Code of Conduct, pull_request_template, issue and feature template
+for indirect contribution: follow the Code of Conduct, pull_request_template, issue and feature template @ ```.github/```
 
-for direct contribution: DM me.
+for direct contribution: DM me @bobdinh139

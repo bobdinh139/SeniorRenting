@@ -17,7 +17,7 @@ Passwords in ```addsenoirname.php ``` and ``` RemoveABidd.php ``` are not encryp
 Verification link is _NOT_ gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
 and you have to reply back if there is anything wrong.
 
-In the blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for every senior will be
+In blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for each senior will be
 raised over time. This does not neccessary mean it is the current price of that senior; the actual price can be higher/lower. 
 
 ## Demo 
@@ -48,7 +48,7 @@ mobile view: (iPhone 5s/SE)
 
 ### License
 
-[GNU Lesser General Public License v2.1](LICENSE)
+[GNU Lesser General Public License v2.1](LICENSE) 
 
 ## Features
 
@@ -72,11 +72,11 @@ mobile view: (iPhone 5s/SE)
 
 + The website can be modified to fit with different purposes (exp: from real-time bidding to blind bidding)
 
-+ Beautiful, responsive UI
++ Beautiful and responsive UI
 
-+ No browser, device left behind
++ No browser and device left behind
 
-+ Your privacy matters; we don't collect data, use cookies, share information and use ads
++ Your privacy matters; we don't collect data, use cookies/ads, share information
 
 + User can request features, create PR(s) and report issues about this project/future project here and on the website
 
