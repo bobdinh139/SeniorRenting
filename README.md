@@ -6,9 +6,9 @@ Little project to make senior bidding activity better!
 
 [Here](#Features) are some reasons why it is better than google form (traditional way).
 
-[Set-up guide](#How-to)
+[Set-up guide](#How-to); Want to contribute? :point_right: [Contribution guidelines](https://github.com/bobdinh139/SeniorRenting/blob/master/CONTRIBUTING.md)
 
-Read more about the project (to-do list, changelog, etc) at [wiki](https://github.com/bobdinh139/SeniorRenting/wiki).
+More (to-do, changelog, [**_future project_**](https://github.com/bobdinh139/PROMposal) :heart_eyes: , etc) at [WIKI](https://github.com/bobdinh139/SeniorRenting/wiki).
 
 ## NOTES
 
@@ -17,10 +17,8 @@ Passwords in ```addsenoirname.php ``` and ``` RemoveABidd.php ``` are not encryp
 Verification link is _NOT_ gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
 and you have to reply back if there is anything wrong.
 
-In the blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for every senior will be
+In blind-bidding, you will not be able to see the current price of each senior. In addition, the minimum price for each senior will be
 raised over time. This does not neccessary mean it is the current price of that senior; the actual price can be higher/lower. 
-
-You should refresh the website frequently to check for any new bids/updates as it is written in php.
 
 ## Demo 
 
@@ -48,15 +46,15 @@ mobile view: (iPhone 5s/SE)
 
 ![4](https://github.com/bobdinh139/HostImage/blob/master/4.gif?raw=true)
 
-#### License
+### License
 
-[GNU Lesser General Public License v2.1](LICENSE)
+[GNU Lesser General Public License v2.1](LICENSE) 
 
 ## Features
 
 + Support blind-bidding
 
-+ Updates in real-time
++ Updates in real-time (every 1 second)
 
 + Show bidding history in real-time bidding, but no names revealed (only bidder's email and senior's code name)
 
@@ -74,13 +72,13 @@ mobile view: (iPhone 5s/SE)
 
 + The website can be modified to fit with different purposes (exp: from real-time bidding to blind bidding)
 
-+ Beautiful UI
++ Beautiful and responsive UI
 
-+ No browser left behind
++ No browser and device left behind
 
-+ Your privacy matters
++ Your privacy matters; we don't collect data, use cookies/ads, share information
 
-+ User can request features, create PR(s) and report issues here and on the website
++ User can request features, create PR(s) and report issues about this project/future project here and on the website
 
 + Fully Open-source
 

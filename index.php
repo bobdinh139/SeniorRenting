@@ -490,27 +490,33 @@ fclose($filefdata);
 </div>
 
 </section>
+
+<script>
+var auto_refresh = setInterval(
+(function () {
+    $("#lol").load("drbaa.php");
+}), 1000);
+
+</script>
+
 <section id="qaa">
    <center><info><h3>Details about lastest bids</h3></info></center>
 
 <button class="collapsible" data-aos="fade-right"></button>
 <div class="content">
 <center><h4>Recent Bid + amount</h4></center>
+<div id ="lol"></div>
 
-<?php
-ini_set( "display_errors", 0); 
-// display logs 
-$filewbid = fopen("information/amount.txt", "r") or die("Unable to open file!");
-while(! feof($filewbid))
-  {
-  echo fgets($filewbid). "<br />";
-  }
-
-fclose($filewbid);
-?>
 </div>
 </section>
 
+<script>
+var auto_refresh = setInterval(
+(function () {
+    $("#lol2").load("dpfep.php");
+}), 1000);
+
+</script>
 
 <section id="pfep">
   <center><info> <h3>Price for each person</h3></info></center>
@@ -518,43 +524,8 @@ fclose($filewbid);
 <button class="collapsible" data-aos="fade-right"></button>
 <div class="content">
 <center><h4>Price for each person</h4></center>
+<div id ="lol2"></div>
 
-<?php
-// display all students + their prices
-ini_set( "display_errors", 0); 
-$countf = 0;
-$fileread = fopen("allstug.txt", "r");
-while (!feof($fileread)){
-$line = fgets($fileread);
-    $countf ++;
-}
-for ($x = 0; $x <= $countf; $x++) {
-    $filefdata = fopen("information/".$x."f".".txt", "r") or die("Unable to open file!");
-while(! feof($filefdata))
-  {
-  echo fgets($filefdata). "<br />";
-  }
-
-fclose($filefdata);
-}
-
-$count = 0;
-$fileread = fopen("allstub.txt", "r");
-while (!feof($fileread)){
-$line = fgets($fileread);
-    $count ++;
-}
-
-for ($x = 0; $x <= $count; $x++) {
-$filemdata = fopen("information/".$x."m".".txt", "r") or die("Unable to open file!");
-while(! feof($filemdata))
-  {
-  echo fgets($filemdata). "<br />";
-  }
-
-fclose($filemdata);
-}
-?>
 </div>
 </section>
 <hr data-aos="zoom-in">
@@ -614,7 +585,6 @@ fclose($filemdata);
 
 <refer><h2>About</h2>
 <p> Seniors’ secret names are used for anonymity purposes</p>
-<p>You should refresh the website frequently to check for any new bids/updates as it is written in php </p>
 <p>Verification link is <b><i>NOT</i></b> gonna be developed, and it was removed from to-do list. Therefore, The website only sends you an email,
 and you have to reply back if there is anything wrong.</p>
 <p>User can see who wins which senior and seniors' secret names after senior renting ends</p>
@@ -646,7 +616,7 @@ width: 130px;
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <div data-aos="zoom-in" >
 <center>
-<a href="https://www.twitter.com/nullflows" target="_blank">
+<a href="https://www.github.com/null0verflow" target="_blank">
 <img src="image/ok.png"  width="110" height="110" class="zoom">
 </a>
 </center>
@@ -670,7 +640,8 @@ width: 130px;
       <a href="#pfep">Price</a>
         <a href="#aboutt">About</a>
 
-  <a href="mailto:duongdaidinh@dogrschools.org?subject=Bug report">Report Issues</a>
+<!–– your email here ––>
+  <a href="mailto:youremail@email.here?subject=Bug report">Report Issues</a>
 
 
 

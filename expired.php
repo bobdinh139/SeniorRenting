@@ -24,7 +24,9 @@
 </head>
 
 <body  id="grad">
-<button  onClick="window.location.href='mailto:duongdaidinh@dogrschools.org?subject=Bug report';" id="report" title="Report" style="display: block;"> Report an issue </button>
+<!–– your email here ––>
+
+<button  onClick="window.location.href='mailto:your@email.here?subject=Bug report';" id="report" title="Report" style="display: block;"> Report an issue </button>
 <style>
 #grad {
 	width: 100wh;
@@ -4994,7 +4996,7 @@ width: 130px;
 <center><refer><h2>This website is made possible by:</h2></refer></center>
 <div data-aos="zoom-in" >
 <center>
-<a href="https://www.twitter.com/nullflows" target="_blank">
+<a href="https://www.github.com/null0verflow" target="_blank">
 <img src="image/ok.png"  width="110" height="110" class="zoom">
 </a>
 </center>
@@ -5015,7 +5017,6 @@ width: 130px;
 
 <script src ='js/javascript.js'></script>
 
-<!–– thanks to https://michalsnik.github.io/aos/  ––>
 <script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'></script>
 	  <script>AOS.init({
   duration: 1200,
