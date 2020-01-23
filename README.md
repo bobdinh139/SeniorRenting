@@ -90,7 +90,7 @@ SET-UP
 
 1. Decide whether you want to use real-time bidding or blind-bidding, if you use blind bidding, copy all the files from ```/blindbid/``` and paste all of them to root
 
-2. Go to ```/addsenoirname.php``` and add/remove seniors (default password is ```123456789```  and ```1234567890``` for for adding senior(s) and removing senior(s)).
+2. Go to ```/addsenoirname.php``` and add/remove seniors (default password is ```123456789```  and ```1234567890``` for adding senior(s) and removing senior(s)).
 
 3. Add bad words to the list at ```index.php``` and ```report.php``` (prevent user from entering bad words). 
 
