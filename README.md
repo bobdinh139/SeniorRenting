@@ -48,7 +48,7 @@ mobile view: (iPhone 5s/SE)
 
 ### License
 
-[GNU Lesser General Public License v2.1](LICENSE) 
+[GNU Lesser General Public License v2.1](LICENSE) in comply with [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 
 ## Features
 
